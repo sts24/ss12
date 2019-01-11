@@ -1,0 +1,15 @@
+@import '_parts/prepend';
+
+@import '_parts/webfonts';
+
+
+body {
+	background: $color1;
+	color: white;
+	font-family: $body-font;
+	font-size: 18px;
+	line-height: 1.5em;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

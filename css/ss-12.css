@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Crete';
+  src: url("../fonts/creteround-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url("../fonts/josefinsans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url("../fonts/josefinsans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: #0e1f48;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
