@@ -1,0 +1,45 @@
+.listing-item {
+    display: flex;
+    margin: 2rem auto;
+    padding: 2rem 0;
+
+    &:last-of-type {
+        border-bottom: 0;
+    }
+}
+
+.listing-image {
+    flex: 0 0 30%;
+    padding: 0 2rem 0 0;
+    margin: 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.listing-content {
+    font-size: em(21);
+
+    h2 {
+        margin: 0;
+
+        a { color: white; }
+    }
+}
+
+.wp-block-media-text {
+    @extend .listing-item;
+}
+
+.wp-block-media-text__media {
+    @extend .listing-image;
+}
+
+.wp-block-media-text__content {
+    @extend .listing-content;
+}
+
+
+

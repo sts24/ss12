@@ -1,0 +1,47 @@
+
+a {
+    color: $color2;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: lighten($color2,15%);
+    }
+}
+
+
+.btn {
+    font-size: rem(21);
+    font-weight: bold;
+    font-family: $secondary-font;
+    background: $color2;
+    color: white;
+    line-height: 1em;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+        background-color: $color1_light;
+        color: white;
+    }
+}
+
+
+h1 {
+    font-family: $primary-font;
+    font-size: rem(60);
+    line-height: 1em;
+    margin: 0;
+}
+
+h2 {
+    font-size: rem(48);
+    font-family: $primary-font;
+    line-height: 1em;
+}
+
+
+
+
+p {
+    font-size: rem(21);
+}

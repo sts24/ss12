@@ -9,3 +9,32 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="site">
+
+<?php if(!is_home()){ ?>
+<header class="site-header blue-waves-bg">
+	<div class="site-title">
+		<span class="hide"><?php bloginfo('name'); ?></span>
+	</div>
+</header>
+<?php } ?>
+
+<button class="hamburger-button" id="site-nav-btn">
+
+</button>
+
+<nav id="site-nav" class="site-nav">
+
+	<?php 
+		wp_nav_menu(array(
+			'theme_location' => 'site_nav',
+			'menu_id' => 'site-nav-list',
+			'menu_class' => 'site-nav-list',
+			'container' => '',
+			'depth' => 1
+
+		)); 
+	?>
+
+</nav>
+

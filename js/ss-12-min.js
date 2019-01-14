@@ -1,0 +1,1 @@
+document.querySelector("#site-nav-btn").addEventListener("click",function(){var e;document.querySelector("#site-nav").classList.add("site-nav-on")});

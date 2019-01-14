@@ -1,0 +1,34 @@
+.home-content {
+    width: 100%;
+    height: calc(100vh - 2rem);
+    display: flex;
+
+}
+
+.home-header {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .home-header-contents {
+        padding: 15vh 10%;
+        background-color: $color1;
+        
+        h1 {
+            font-size: rem(40);
+        }
+
+        h2 {
+            font-size: rem(28);
+        }
+    }
+
+.home-decoration {
+    flex: 0 0 50%;
+    background-color: $color1;
+    background-image: url('../images/deathvalley-large.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

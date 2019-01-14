@@ -9,6 +9,65 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/archive-portfolio.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/archive-portfolio.php",
+		"oF": 0
+		},
+	"/css/_parts/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_parts/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/_parts/_home.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_parts/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/_parts/_nav.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_parts/_nav.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/_parts/_portfolio.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_parts/_portfolio.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/_parts/_prepend.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -18,6 +77,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_parts/_prepend.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/_parts/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_parts/_typography.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -100,12 +172,91 @@
 		"oAP": "/header.php",
 		"oF": 1
 		},
+	"/home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/home.php",
+		"oF": 0
+		},
+	"/images/california.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/california.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/deathvalley-large.jpg": {
+		"ft": 16384,
+		"iS": 73830,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/deathvalley-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/dv-pano-large.jpg": {
+		"ft": 16384,
+		"iS": 10673,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/dv-pano-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/waves-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/waves-light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/waves.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/waves.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "/index.php",
 		"oF": 1
+		},
+	"/js/ss-12-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/ss-12-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/ss-12.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/ss-12-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"/page.php": {
 		"cB": 0,
@@ -145,11 +296,25 @@
 		"oAP": "/template-parts/page-content.php",
 		"oF": 0
 		},
-	"/template-parts/portfolio.php": {
+	"/template-parts/page-title.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/template-parts/portfolio.php",
+		"oAP": "/template-parts/page-title.php",
+		"oF": 0
+		},
+	"/template-parts/portfolio-item.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/portfolio-item.php",
+		"oF": 0
+		},
+	"/template-parts/portfolio-listing-item.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/portfolio-listing-item.php",
 		"oF": 0
 		}
 	},

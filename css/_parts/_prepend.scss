@@ -10,6 +10,8 @@ $color1: $navy;
 $color2: $orange;
 $link-color: $orange;
 
+$color1_light: lighten($color1,10%);
+
 $gray: #2d2d2d;
 
 // fonts
@@ -23,5 +25,9 @@ $body-font: $secondary-font;
 // convert EMs
 
 @function em($size){
-	@return #{$size/18}em;
+	@return #{$size/21}em;
+}
+
+@function rem($size){
+	@return #{$size/21}em;
 }

@@ -16,11 +16,166 @@
   font-weight: normal;
   font-style: normal; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background: #0e1f48;
   color: white;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.5em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  padding: 0;
+  margin: 0; }
+
+#site {
+  border: 1rem solid #FF5A00;
+  min-height: 100vh;
+  position: relative; }
+
+.blue-waves-bg {
+  background-color: #163173;
+  background-image: url("../images/waves.svg");
+  background-size: 100px auto; }
+
+a {
+  color: #FF5A00;
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    color: #ff8c4d; }
+
+.btn {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  background: #FF5A00;
+  color: white;
+  line-height: 1em;
+  padding: 0.5rem 1rem; }
+  .btn:hover {
+    background-color: #163173;
+    color: white; }
+
+h1 {
+  font-family: "Crete", serif;
+  font-size: 2.8571428571em;
+  line-height: 1em;
+  margin: 0; }
+
+h2 {
+  font-size: 2.2857142857em;
+  font-family: "Crete", serif;
+  line-height: 1em; }
+
+p {
+  font-size: 1em; }
+
+.site-header {
+  padding: 2rem 0; }
+
+.page-title {
+  padding: 3rem;
+  margin-bottom: 5rem;
+  background-color: #0a1633; }
+
+.hamburger-button {
+  appearance: none;
+  border: 0;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #FF5A00;
+  cursor: pointer; }
+
+.site-nav {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1rem solid #FF5A00;
+  padding: 3rem;
+  text-align: center;
+  color: #0e1f48;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.25); }
+  .site-nav.site-nav-on {
+    display: block; }
+
+.site-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .site-nav-list > li {
+    padding: 0;
+    margin: 0 0; }
+    .site-nav-list > li > a {
+      display: block;
+      font-family: "Crete", serif;
+      font-size: 1.7142857143em;
+      color: #FF5A00;
+      padding: 1rem 0; }
+      .site-nav-list > li > a:hover {
+        background: #ffdecc; }
+
+.home-content {
+  width: 100%;
+  height: calc(100vh - 2rem);
+  display: flex; }
+
+.home-header {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.home-header-contents {
+  padding: 15vh 10%;
+  background-color: #0e1f48; }
+  .home-header-contents h1 {
+    font-size: 1.9047619048em; }
+  .home-header-contents h2 {
+    font-size: 1.3333333333em; }
+
+.home-decoration {
+  flex: 0 0 50%;
+  background-color: #0e1f48;
+  background-image: url("../images/deathvalley-large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.site-content {
+  max-width: 1000px;
+  margin: auto; }
+
+.listing-item, .wp-block-media-text {
+  display: flex;
+  margin: 2rem auto;
+  padding: 2rem 0; }
+  .listing-item:last-of-type, .wp-block-media-text:last-of-type {
+    border-bottom: 0; }
+
+.listing-image, .wp-block-media-text__media {
+  flex: 0 0 30%;
+  padding: 0 2rem 0 0;
+  margin: 0; }
+  .listing-image img, .wp-block-media-text__media img {
+    width: 100%;
+    height: auto; }
+
+.listing-content, .wp-block-media-text__content {
+  font-size: 1em; }
+  .listing-content h2, .wp-block-media-text__content h2 {
+    margin: 0; }
+    .listing-content h2 a, .wp-block-media-text__content h2 a {
+      color: white; }
+
+.hide {
+  display: none; }
