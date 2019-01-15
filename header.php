@@ -23,18 +23,19 @@
 
 </button>
 
-<nav id="site-nav" class="site-nav">
+<div class="overlay site-nav-overlay" id="site-nav-overlay">
+	<nav id="site-nav" class="site-nav">
 
-	<?php 
-		wp_nav_menu(array(
-			'theme_location' => 'site_nav',
-			'menu_id' => 'site-nav-list',
-			'menu_class' => 'site-nav-list',
-			'container' => '',
-			'depth' => 1
+		<?php 
+			wp_nav_menu(array(
+				'theme_location' => 'site_nav',
+				'menu_id' => 'site-nav-list',
+				'menu_class' => 'site-nav-list',
+				'container' => '',
+				'depth' => 1
 
-		)); 
-	?>
+			)); 
+		?>
 
-</nav>
-
+	</nav>
+</div>

@@ -8,14 +8,23 @@
     height: 5rem;
     border-radius: 50%;
     background-color: $color2;
+    background-image: url('../images/hamburger-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: center center;
     cursor: pointer;
+
+    .overlay-on & {
+        z-index: 1100;
+        background-image: url('../images/x-icon.svg');
+    }
 }
 
 
 .site-nav {
     display: none;
     position: absolute;
-    z-index: 1000;
+    z-index: 1010;
     top: 50%;
     left: 50%;
     width: 50%;
@@ -25,12 +34,11 @@
     border: 1rem solid $color2;
     padding: 3rem;
     text-align: center;
+    cursor: default;
 
     color: $color1;
 
-    box-shadow: 0 0 2rem rgba(white,0.25);
-
-    &.site-nav-on {
+    .overlay-on & {
         display: block;
     }
 }

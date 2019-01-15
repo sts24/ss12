@@ -38,6 +38,22 @@ body {
   background-image: url("../images/waves.svg");
   background-size: 100px auto; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  cursor: pointer;
+  border: 1rem solid #FF5A00;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: url("../images/waves-light.svg");
+  background-size: 100px auto; }
+  .overlay-on .overlay {
+    display: block; }
+
 a {
   color: #FF5A00;
   font-weight: bold;
@@ -89,12 +105,19 @@ p {
   height: 5rem;
   border-radius: 50%;
   background-color: #FF5A00;
+  background-image: url("../images/hamburger-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center center;
   cursor: pointer; }
+  .overlay-on .hamburger-button {
+    z-index: 1100;
+    background-image: url("../images/x-icon.svg"); }
 
 .site-nav {
   display: none;
   position: absolute;
-  z-index: 1000;
+  z-index: 1010;
   top: 50%;
   left: 50%;
   width: 50%;
@@ -103,9 +126,9 @@ p {
   border: 1rem solid #FF5A00;
   padding: 3rem;
   text-align: center;
-  color: #0e1f48;
-  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.25); }
-  .site-nav.site-nav-on {
+  cursor: default;
+  color: #0e1f48; }
+  .overlay-on .site-nav {
     display: block; }
 
 .site-nav-list {
@@ -154,6 +177,23 @@ p {
 .site-content {
   max-width: 1000px;
   margin: auto; }
+
+.wp-block-gallery {
+  display: flex;
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0; }
+
+.blocks-gallery-item {
+  flex: 0 0 50%;
+  padding: 1rem;
+  margin: 0; }
+  .blocks-gallery-item figure {
+    padding: 0;
+    margin: 0; }
+  .blocks-gallery-item img {
+    width: 100%;
+    height: auto; }
 
 .listing-item, .wp-block-media-text {
   display: flex;

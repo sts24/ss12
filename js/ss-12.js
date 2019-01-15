@@ -1,7 +1,17 @@
-document.querySelector('#site-nav-btn').addEventListener('click', function(){
+var siteNav = {
+    element: document.querySelector('#site-nav-overlay'),
+    open: function(){
+        document.querySelector('body').classList.add('overlay-on');
+    },
+    close: function(){
+        document.querySelector('body').classList.remove('overlay-on');
+    },
+    toggle: function(e){
+        e.stopPropagation();
+        document.querySelector('body').classList.toggle('overlay-on');
+    }
+};
 
-    var siteNav = document.querySelector('#site-nav');
+document.querySelector('#site-nav-btn').addEventListener('click', siteNav.toggle);
 
-    siteNav.classList.add('site-nav-on');
-
-});
+document.querySelector('#site-nav-overlay').addEventListener('click', siteNav.toggle);

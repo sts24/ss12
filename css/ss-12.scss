@@ -23,9 +23,24 @@ body {
 }
 
 .blue-waves-bg {
-    background-color: $color1_light;
-    background-image: url('../images/waves.svg');
-    background-size: 100px auto;
+    @include blue-waves-bg;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    cursor: pointer;
+    border: 1rem solid $color2;
+    @include light-waves-bg;
+
+    .overlay-on & {
+        display: block;
+    }
 }
 
 @import '_parts/typography.scss';
@@ -35,16 +50,9 @@ body {
 
 @import '_parts/home';
 
-.site-content {
-    max-width: 1000px;
-    margin: auto;
-}
+@import '_parts/content';
 
 @import '_parts/portfolio';
-
-.page-content {
-    
-}
 
 
 

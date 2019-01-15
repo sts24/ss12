@@ -31,3 +31,18 @@ $body-font: $secondary-font;
 @function rem($size){
 	@return #{$size/21}em;
 }
+
+
+// styles
+
+@mixin blue-waves-bg {
+	background-color: $color1_light;
+    background-image: url('../images/waves.svg');
+    background-size: 100px auto;
+}
+
+@mixin light-waves-bg {
+	background-color: rgba(white,0.25);
+    background-image: url('../images/waves-light.svg');
+    background-size: 100px auto;
+}
