@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" co`ntent="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php //wp_head(); ?>
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/ss-12.css" />
@@ -19,7 +19,7 @@
 </header>
 <?php } ?>
 
-<button class="hamburger-button" id="site-nav-btn">
+<button class="hamburger-button" id="site-nav-btn" aria-label="Site Menu Button">
 
 </button>
 
@@ -27,14 +27,14 @@
 	<nav id="site-nav" class="site-nav">
 
 		<?php 
-			wp_nav_menu(array(
+			$site_nav = wp_nav_menu(array(
 				'theme_location' => 'site_nav',
 				'menu_id' => 'site-nav-list',
 				'menu_class' => 'site-nav-list',
 				'container' => '',
 				'depth' => 1
-
 			)); 
+
 		?>
 
 	</nav>

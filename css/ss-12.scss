@@ -17,9 +17,13 @@ body {
 }
 
 #site { 
-    border: 1rem solid $color2; 
+    border: 0.5rem solid $color2; 
     min-height: 100vh; 
     position: relative;
+
+    @media (min-width: 768px){
+        border-width: 1rem;
+    }
 }
 
 .blue-waves-bg {
@@ -35,11 +39,15 @@ body {
     z-index: 1000;
     display: none;
     cursor: pointer;
-    border: 1rem solid $color2;
+    border: 0.5rem solid $color2;
     @include light-waves-bg;
 
     .overlay-on & {
         display: block;
+    }
+
+    @media (min-width: 768px){
+        border-width: 1rem;
     }
 }
 
