@@ -339,6 +339,9 @@ main.site-content {
   @media (min-width: 768px) {
     .home-header-contents {
       padding: 10%; } }
+  @media (min-width: 1440px) {
+    .home-header-contents {
+      padding: 10% 20%; } }
 
 .home-decoration {
   flex: 0 0 100%;
