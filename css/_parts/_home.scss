@@ -16,7 +16,8 @@
     }
 }
     .home-header-contents {
-        padding: 15vh 10%;
+        width: 100%;
+        padding: 10%;
         background-color: $color1;
         
         h1 {
@@ -31,8 +32,16 @@
 .home-decoration {
     flex: 0 0 50%;
     background-color: $color1;
-    background-image: url('../images/deathvalley-large.jpg');
+    background-image: url('../images/dv-large.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-width: 768px){
+        background-image: url('../images/dv-medium.jpg');
+    }
+
+    @media (min-width: 1400px){
+        background-image: url('../images/dv-large.jpg');
+    }
 }

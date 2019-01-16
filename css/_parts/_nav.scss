@@ -66,3 +66,56 @@
         }
     }
 }
+
+
+.special-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 -1rem;
+    display: flex;
+
+    > li {
+        padding: 0;
+        margin: 0;
+
+        > a {
+            display: inline-block;
+            font-size: rem(14);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 1rem;
+            line-height: 1em;
+
+            &:hover {
+                background-color: $color1_light;
+            }
+
+            &::before {
+                display: block;
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                margin: 0 auto 0.5rem auto;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &[href*="mailto"]::before {
+                background-image: url('../images/icons/paper-plane.svg');
+            }
+
+            &[href*="dribbble"]::before {
+                background-image: url('../images/icons/dribbble.svg');
+            }
+
+            &[href*="github"]::before {
+                background-image: url('../images/icons/github.svg');
+            }
+
+            &[href*="codepen"]::before {
+                background-image: url('../images/icons/codepen.svg');
+            }
+        }
+    }
+}

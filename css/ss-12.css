@@ -164,6 +164,41 @@ p {
       .site-nav-list > li > a:hover {
         background: #ffdecc; }
 
+.special-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 -1rem;
+  display: flex; }
+  .special-links > li {
+    padding: 0;
+    margin: 0; }
+    .special-links > li > a {
+      display: inline-block;
+      font-size: 0.6666666667em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 1rem;
+      line-height: 1em; }
+      .special-links > li > a:hover {
+        background-color: #163173; }
+      .special-links > li > a::before {
+        display: block;
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        margin: 0 auto 0.5rem auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .special-links > li > a[href*="mailto"]::before {
+        background-image: url("../images/icons/paper-plane.svg"); }
+      .special-links > li > a[href*="dribbble"]::before {
+        background-image: url("../images/icons/dribbble.svg"); }
+      .special-links > li > a[href*="github"]::before {
+        background-image: url("../images/icons/github.svg"); }
+      .special-links > li > a[href*="codepen"]::before {
+        background-image: url("../images/icons/codepen.svg"); }
+
 .site-content {
   max-width: 1000px;
   margin: auto; }
@@ -235,7 +270,8 @@ p {
     max-width: 400px; }
 
 .home-header-contents {
-  padding: 15vh 10%;
+  width: 100%;
+  padding: 10%;
   background-color: #0e1f48; }
   .home-header-contents h1 {
     font-size: 1.9047619048em; }
@@ -245,10 +281,24 @@ p {
 .home-decoration {
   flex: 0 0 50%;
   background-color: #0e1f48;
-  background-image: url("../images/deathvalley-large.jpg");
+  background-image: url("../images/dv-large.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+  @media (min-width: 768px) {
+    .home-decoration {
+      background-image: url("../images/dv-medium.jpg"); } }
+  @media (min-width: 1400px) {
+    .home-decoration {
+      background-image: url("../images/dv-large.jpg"); } }
+
+.site-footer {
+  text-align: center; }
+  .site-footer .site-footer-nav {
+    margin: auto;
+    display: inline-block; }
+  .site-footer .special-links {
+    margin: 0; }
 
 .hide {
   display: none; }

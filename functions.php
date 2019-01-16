@@ -14,7 +14,8 @@ add_theme_support( 'post-thumbnails' );
 function site_nav() {
 
 	$locations = array(
-		'site_nav' => __( 'Main Site Nav'),
+        'site_nav' => __( 'Main Site Nav'),
+        'special_links' => __( 'Special Links'),
 	);
 	register_nav_menus( $locations );
 

@@ -36,6 +36,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/css/_parts/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_parts/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/_parts/_header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -216,26 +229,37 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/images/deathvalley-large.jpg": {
+	"/images/dv-large.jpg": {
 		"ft": 16384,
-		"iS": 73830,
+		"iS": 253795,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/images/deathvalley-large.jpg",
+		"oAP": "/images/dv-large.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/images/dv-pano-large.jpg": {
+	"/images/dv-medium.jpg": {
 		"ft": 16384,
-		"iS": 10673,
+		"iS": 64631,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/images/dv-pano-large.jpg",
+		"oAP": "/images/dv-medium.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/dv-small.jpg": {
+		"ft": 16384,
+		"iS": 25509,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/dv-small.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/images/hamburger-icon.svg": {
@@ -243,6 +267,46 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/images/hamburger-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/icons/codepen.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/icons/codepen.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/icons/dribbble.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/icons/dribbble.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/icons/github.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/icons/github.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/icons/paper-plane.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/icons/paper-plane.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -2377,7 +2441,7 @@
 	"languageDefaultsUserDefined": [
 		],
 	"overrideExternalServerCSS": 0,
-	"previewPathAddition": "",
+	"previewPathAddition": "/ss-12/",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
