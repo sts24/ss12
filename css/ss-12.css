@@ -242,7 +242,7 @@ p {
   padding: 0 1rem; }
   @media (min-width: 768px) {
     .site-content {
-      padding: 0; } }
+      padding: 0 1rem; } }
 
 main.site-content {
   padding: 3rem 1rem; }
