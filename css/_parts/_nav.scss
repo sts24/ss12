@@ -4,19 +4,37 @@
     position: fixed;
     top: 2rem;
     right: 2rem;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: $color2;
     background-image: url('../images/hamburger-icon.svg');
     background-repeat: no-repeat;
-    background-size: 32px 32px;
+    background-size: 1rem 1rem;
     background-position: center center;
     cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 0 0.25rem $highlight;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem $highlight;
+    }
+
+    &:active {
+        background-color: darken($color2,15%);
+    }
 
     .overlay-on & {
         z-index: 1100;
         background-image: url('../images/x-icon.svg');
+    }
+
+    @media (min-width: 768px){
+        width: 5rem;
+        height: 5rem;
+        background-size: 2rem 2rem;
     }
 }
 
@@ -27,12 +45,12 @@
     z-index: 1010;
     top: 50%;
     left: 50%;
-    width: 50%;
+    width: auto;
     transform: translate(-50%,-50%);
     
     background-color: white;
-    border: 1rem solid $color2;
-    padding: 3rem;
+    border: 0.5rem solid $color2;
+    padding: 1rem 2rem;
     text-align: center;
     cursor: default;
 
@@ -40,6 +58,12 @@
 
     .overlay-on & {
         display: block;
+    }
+
+    @media (min-width: 768px){
+        width: 50%;
+        padding: 3rem;
+        border-width: 1rem;
     }
 }
 
@@ -58,7 +82,7 @@
             font-family: $primary-font;
             font-size: rem(36);
             color: $color2;
-            padding: 1rem 0;
+            padding: 1rem;
 
             &:hover {
                 background: lighten($color2,40%);
@@ -73,10 +97,13 @@
     padding: 0;
     margin: 0 -1rem;
     display: flex;
+    flex-wrap: wrap;
 
     > li {
         padding: 0;
         margin: 0;
+        flex: 1 1 50%;
+        text-align: center;
 
         > a {
             display: inline-block;
@@ -85,6 +112,7 @@
             letter-spacing: 1px;
             padding: 1rem;
             line-height: 1em;
+            margin: auto;
 
             &:hover {
                 background-color: $color1_light;
@@ -116,6 +144,12 @@
             &[href*="codepen"]::before {
                 background-image: url('../images/icons/codepen.svg');
             }
+        }
+    }
+
+    @media (min-width: 768px){
+        > li {
+            flex: 1 1 auto;
         }
     }
 }

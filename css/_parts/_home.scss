@@ -1,12 +1,17 @@
 .home-content {
     width: 100%;
-    height: calc(100vh - 2rem);
+    
     display: flex;
+    flex-wrap: wrap;
 
+    @media (min-width: 768px){
+        height: calc(100vh - 2rem);
+    }
 }
 
 .home-header {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
+    order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +19,15 @@
     .site-title {
         max-width: 400px;
     }
+
+    @media (min-width: 768px){
+        flex: 0 0 50%;
+        order: 1;
+    }
 }
     .home-header-contents {
         width: 100%;
-        padding: 10%;
+        padding: 1rem;
         background-color: $color1;
         
         h1 {
@@ -27,17 +37,26 @@
         h2 {
             font-size: rem(28);
         }
+
+        @media (min-width: 768px){
+            padding: 10%;
+        }
     }
 
 .home-decoration {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
+    order: 1;
+    height: 30vh;
     background-color: $color1;
-    background-image: url('../images/dv-large.jpg');
+    background-image: url('../images/dv-small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
     @media (min-width: 768px){
+        flex: 0 0 50%;
+        order: 2;
+        height: auto;
         background-image: url('../images/dv-medium.jpg');
     }
 

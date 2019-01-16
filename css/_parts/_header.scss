@@ -1,8 +1,12 @@
 .site-header {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
     min-height: 7rem;
+
+    @media (min-width: 768px){
+        padding: 2rem;
+    }
 }
 
 .site-title {
@@ -22,8 +26,7 @@
 
 
 .page-title {
-    padding: 3rem;
-    margin-bottom: 5rem;
+    padding: 3rem 0;
 
     background-color: darken($color1,5%);
 }

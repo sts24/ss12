@@ -30,15 +30,23 @@ a {
 
 h1 {
     font-family: $primary-font;
-    font-size: rem(60);
+    font-size: rem(36);
     line-height: 1em;
     margin: 0;
+
+    @media (min-width: 768px){
+        font-size: rem(60);
+    }
 }
 
 h2 {
-    font-size: rem(48);
+    font-size: rem(32);
     font-family: $primary-font;
     line-height: 1em;
+
+    @media (min-width: 768px){
+        font-size: rem(48);
+    }
 }
 
 

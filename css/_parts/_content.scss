@@ -1,6 +1,15 @@
 .site-content {
     max-width: 1000px;
     margin: auto;
+    padding: 0 1rem;
+
+    @media (min-width: 768px){
+        padding: 0;
+    }
+}
+
+main.site-content {
+    padding: 3rem 1rem;
 }
 
 
