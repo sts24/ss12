@@ -11,13 +11,15 @@ a {
 
 
 .btn {
-    font-size: rem(21);
+    font-size: rem(18);
     font-weight: bold;
     font-family: $secondary-font;
     background: $color2;
     color: white;
     line-height: 1em;
     padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
     &:hover {
         background-color: $color1_light;

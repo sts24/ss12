@@ -44,17 +44,12 @@ body {
 }
 
 @import '_parts/typography.scss';
-
 @import '_parts/header';
 @import '_parts/nav';
-
-@import '_parts/home';
-
 @import '_parts/content';
-
 @import '_parts/portfolio';
 
-
+@import '_parts/home';
 
 .hide {
     display: none;

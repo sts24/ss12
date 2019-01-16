@@ -3,7 +3,7 @@
 
 // WP_Query arguments
 $args = array(
-	'post_type'              => array( 'portfolio' ),
+	'post_type'              => array( 'projects' ),
 	'order'                  => 'ASC',
 	'orderby'                => 'date',
 );

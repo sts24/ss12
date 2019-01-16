@@ -13,9 +13,9 @@
 
 <?php if(!is_home()){ ?>
 <header class="site-header blue-waves-bg">
-	<div class="site-title">
+	<a href="<?php bloginfo('url'); ?>" class="site-title">
 		<span class="hide"><?php bloginfo('name'); ?></span>
-	</div>
+	</a>
 </header>
 <?php } ?>
 

@@ -1,5 +1,14 @@
 <?php
 
+
+require_once('functions/custom-post-types.php');
+
+
+
+
+
+
+
 add_theme_support( 'post-thumbnails' );
 
 function site_nav() {
