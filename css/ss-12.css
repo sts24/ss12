@@ -294,6 +294,13 @@ hr {
         width: 100%;
         height: auto; } }
 
+.wp-block-image {
+  padding: 0;
+  margin: 2rem 0; }
+  .wp-block-image > img {
+    width: 100%;
+    height: auto; }
+
 .listing-item, .wp-block-media-text {
   margin: 2rem auto;
   padding: 2rem 0 0 0; }
