@@ -198,11 +198,25 @@
 		"oAP": "/functions.php",
 		"oF": 1
 		},
+	"/functions/custom-menus.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/functions/custom-menus.php",
+		"oF": 0
+		},
 	"/functions/custom-post-types.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/functions/custom-post-types.php",
+		"oF": 0
+		},
+	"/functions/wp-filters.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/functions/wp-filters.php",
 		"oF": 0
 		},
 	"/header.php": {
