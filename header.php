@@ -3,7 +3,16 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?php //wp_head(); ?>
+
+	<?php
+		if(is_home()){
+			$page_title = get_bloginfo('name').' | '.get_bloginfo('description');
+		} else {
+			$page_title = get_bloginfo('name').wp_title(' | ',false);
+		}
+	?>
+
+	<title><?php echo $page_title; ?></title>
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/ss-12.css" />
 </head>
