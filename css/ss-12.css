@@ -397,6 +397,14 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+  .home-decoration::before {
+    display: block;
+    content: '';
+    height: 100%;
+    opacity: 0.25;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url("../images/waves-light.svg");
+    background-size: 100px auto; }
   @media (min-width: 768px) {
     .home-decoration {
       flex: 0 0 50%;

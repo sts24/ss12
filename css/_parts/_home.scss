@@ -57,6 +57,14 @@
     background-repeat: no-repeat;
     background-position: center center;
 
+    &::before {
+        display: block;
+        content: '';
+        height: 100%;
+        opacity: 0.25;
+        @include light-waves-bg;
+    }
+
     @media (min-width: 768px){
         flex: 0 0 50%;
         order: 2;
