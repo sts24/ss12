@@ -1,5 +1,5 @@
 
-<?php if(!is_home()){ ?>
+<?php if(!is_page('home')){ ?>
 <footer class="site-footer blue-waves-bg">
 
 <nav class="site-footer-nav">

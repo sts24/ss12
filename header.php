@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php
-		if(is_home()){
+		if(is_page('home')){
 			$page_title = get_bloginfo('name').' | '.get_bloginfo('description');
 		} else {
 			$page_title = get_bloginfo('name').wp_title(' | ',false);
@@ -20,7 +20,7 @@
 <body <?php body_class(); ?>>
 <div id="site">
 
-<?php if(!is_home()){ ?>
+<?php if(!is_page('home')){ ?>
 <header class="site-header blue-waves-bg">
 	<a href="<?php bloginfo('url'); ?>" class="site-title">
 		<span class="hide"><?php bloginfo('name'); ?></span>

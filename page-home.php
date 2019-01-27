@@ -8,7 +8,14 @@
             <h1 class="site-title"><span class="hide"><?php bloginfo('name'); ?></span></h1>
             <h2><?php bloginfo('description'); ?></h2>
 
-            <p>I am a web designer <a href="<?php bloginfo('url'); ?>/about-scott">born and raised in Southern California</a>. With a specialty in front-end development, I have extensive experience with working in higher education. See my <a href="<?php bloginfo('url'); ?>/portfolio">portfolio of work</a> or check up on my <a href="<?php bloginfo('url'); ?>/projects">latest side projects</a>.
+            <?php 
+                while ( have_posts() ) :
+                    the_post();
+            
+                 the_content(); 
+                 
+                endwhile;
+            ?>
 
             <?php 
                 wp_nav_menu(array(
