@@ -15,7 +15,7 @@ function cptui_register_my_cpts_portfolio() {
 	$portfolio = array(
 		"label" => __( "Portfolio", "custom-post-type-ui" ),
 		"labels" => $portfolio_labels,
-		"description" => "",
+		"description" => "My work ranges from higher education marketing, developing for WordPress and OUCampus, to teaching at the college level, and illustration.",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
@@ -48,7 +48,7 @@ function cptui_register_my_cpts_portfolio() {
 	$projects = array(
 		"label" => __( "Projects", "custom-post-type-ui" ),
 		"labels" => $projects_labels,
-		"description" => "",
+		"description" => "A collection of my side projects.",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,

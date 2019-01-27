@@ -226,13 +226,6 @@
 		"oAP": "/header.php",
 		"oF": 1
 		},
-	"/home.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/home.php",
-		"oF": 0
-		},
 	"/images/california.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -392,6 +385,13 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"/page-home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-home.php",
+		"oF": 0
 		},
 	"/page.php": {
 		"cB": 0,

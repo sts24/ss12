@@ -17,6 +17,11 @@ get_template_part( 'template-parts/page-title' );
 
 echo '<main class="site-content">';
 
+
+echo '<p class="intro">'.get_post_type_object('portfolio')->description.'</p>';
+echo '<hr />';
+
+
 // The Loop
 if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {

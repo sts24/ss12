@@ -247,6 +247,14 @@ p {
 main.site-content {
   padding: 3rem 1rem; }
 
+.intro {
+  font-size: 1.1428571429em; }
+  @media (min-width: 768px) {
+    .intro {
+      font-size: 1.3333333333em;
+      line-height: 1.6em;
+      margin-bottom: 2rem; } }
+
 .wp-block-gallery {
   display: flex;
   list-style: none;

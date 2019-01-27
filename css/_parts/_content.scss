@@ -13,6 +13,16 @@ main.site-content {
 }
 
 
+.intro {
+    font-size: rem(24);
+
+    @media (min-width: 768px){
+        font-size: rem(28);
+        line-height: 1.6em;
+        margin-bottom: 2rem;
+    }
+}
+
 .wp-block-gallery {
     display: flex;
     list-style: none;
