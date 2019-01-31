@@ -20,7 +20,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #0e1f48;
+  background: #102046;
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-size: 21px;
@@ -29,7 +29,7 @@ body {
   margin: 0; }
 
 #site {
-  border: 0.5rem solid #FF5A00;
+  border: 0.5rem solid #e6621a;
   min-height: 100vh;
   position: relative; }
   @media (min-width: 768px) {
@@ -37,7 +37,7 @@ body {
       border-width: 1rem; } }
 
 .blue-waves-bg {
-  background-color: #163173;
+  background-color: #1a336f;
   background-image: url("../images/waves.svg");
   background-size: 100px auto; }
 
@@ -50,7 +50,7 @@ body {
   z-index: 1000;
   display: none;
   cursor: pointer;
-  border: 0.5rem solid #FF5A00;
+  border: 0.5rem solid #e6621a;
   background-color: rgba(255, 255, 255, 0.25);
   background-image: url("../images/waves-light.svg");
   background-size: 100px auto; }
@@ -61,24 +61,24 @@ body {
       border-width: 1rem; } }
 
 a {
-  color: #FF5A00;
+  color: #e6621a;
   font-weight: bold;
   text-decoration: none; }
   a:hover {
-    color: #ff8c4d; }
+    color: #ed915e; }
 
 .btn {
   font-size: 0.8571428571em;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
-  background: #FF5A00;
+  background: #e6621a;
   color: white;
   line-height: 1em;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
   .btn:hover {
-    background-color: #163173;
+    background-color: #1a336f;
     color: white; }
 
 h1 {
@@ -124,7 +124,7 @@ p {
 
 .page-title {
   padding: 3rem 0;
-  background-color: #0a1633; }
+  background-color: #0b1631; }
 
 .hamburger-button {
   appearance: none;
@@ -136,7 +136,7 @@ p {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: #FF5A00;
+  background-color: #e6621a;
   background-image: url("../images/hamburger-icon.svg");
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
@@ -147,7 +147,7 @@ p {
   .hamburger-button:focus {
     box-shadow: 0 0 0 0.25rem #5edd9e; }
   .hamburger-button:active {
-    background-color: #b33f00; }
+    background-color: #a14412; }
   .overlay-on .hamburger-button {
     z-index: 1100;
     background-image: url("../images/x-icon.svg"); }
@@ -166,11 +166,11 @@ p {
   width: auto;
   transform: translate(-50%, -50%);
   background-color: white;
-  border: 0.5rem solid #FF5A00;
+  border: 0.5rem solid #e6621a;
   padding: 1rem 2rem;
   text-align: center;
   cursor: default;
-  color: #0e1f48; }
+  color: #102046; }
   .overlay-on .site-nav {
     display: block; }
   @media (min-width: 768px) {
@@ -190,10 +190,10 @@ p {
       display: block;
       font-family: "Crete", serif;
       font-size: 1.7142857143em;
-      color: #FF5A00;
+      color: #e6621a;
       padding: 1rem; }
       .site-nav-list > li > a:hover {
-        background: #ffdecc; }
+        background: #fae0d1; }
 
 .special-links {
   list-style: none;
@@ -215,7 +215,7 @@ p {
       line-height: 1em;
       margin: auto; }
       .special-links > li > a:hover {
-        background-color: #163173; }
+        background-color: #1a336f; }
       .special-links > li > a::before {
         display: block;
         content: '';
@@ -278,7 +278,7 @@ hr {
   height: 1rem;
   border: 0 none;
   margin: 2rem 0;
-  background-color: #163173;
+  background-color: #1a336f;
   background-image: url("../images/waves.svg");
   background-size: 100px auto;
   display: block; }
@@ -319,7 +319,7 @@ hr {
     flex: 0 0 100%;
     width: 100%;
     height: 1rem;
-    background-color: #163173;
+    background-color: #1a336f;
     background-image: url("../images/waves.svg");
     background-size: 100px auto; }
   .listing-item:last-of-type, .wp-block-media-text:last-of-type {
@@ -377,7 +377,7 @@ hr {
 .home-header-contents {
   width: 100%;
   padding: 1rem;
-  background-color: #0e1f48; }
+  background-color: #102046; }
   .home-header-contents h1 {
     font-size: 1.9047619048em; }
   .home-header-contents h2 {
@@ -393,7 +393,7 @@ hr {
   flex: 0 0 100%;
   order: 1;
   height: 30vh;
-  background-color: #0e1f48;
+  background-color: #102046;
   background-image: url("../images/dv-small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
