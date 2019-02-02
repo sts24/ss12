@@ -8,6 +8,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
+	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/images/site-icon.png">
+
+
 	<?php
 		if(is_page('home')){
 			$page_title = get_bloginfo('name').' | '.get_bloginfo('description');
@@ -32,9 +36,7 @@
 </header>
 <?php } ?>
 
-<button class="hamburger-button" id="site-nav-btn" aria-label="Site Menu Button">
-
-</button>
+<button class="hamburger-button" id="site-nav-btn" aria-label="Site Menu Button"></button>
 
 <div class="overlay site-nav-overlay" id="site-nav-overlay">
 	<nav id="site-nav" class="site-nav">

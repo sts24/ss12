@@ -282,6 +282,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/favicon.png": {
+		"ft": 32768,
+		"iS": 1766,
+		"oA": 0,
+		"oAP": "/images/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/hamburger-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -385,6 +396,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/images/site-icon.png": {
+		"ft": 32768,
+		"iS": 5835,
+		"oA": 0,
+		"oAP": "/images/site-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/images/ss-12-title.svg": {

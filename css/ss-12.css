@@ -112,6 +112,7 @@ p {
       min-height: 9.5238095238em; } }
 
 .site-title {
+  display: block;
   background-image: url("../images/ss-12-title.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -122,6 +123,9 @@ p {
     content: '';
     display: block;
     padding-top: 15.812%; }
+  @media (min-width: 1200px) {
+    .site-title {
+      max-width: 400px; } }
 
 .page-title {
   padding: 3rem 0;
@@ -193,7 +197,9 @@ p {
     .hamburger-button {
       width: 5rem;
       height: 5rem;
-      background-size: 2rem 2rem; } }
+      background-size: 2rem 2rem;
+      transform: translateY(-50%);
+      top: calc(200px / 2 + 1rem); } }
 
 .site-nav {
   display: none;
