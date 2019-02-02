@@ -1,0 +1,44 @@
+.random-bg {
+    position: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    > * {
+        position: relative;
+        z-index: 10;
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        opacity: 0.25;
+        @include light-waves-bg;
+    }
+}
+
+.random-bg-1 {
+    background-image: url('../images/random-bg/anacappa-large.jpg');
+}
+
+.random-bg-2 {
+    background-image: url('../images/random-bg/haleakala-large.jpg');
+}
+
+.random-bg-3 {
+    background-image: url('../images/random-bg/joshua-tree-large.jpg');
+}
+
+.random-bg-4 {
+    background-image: url('../images/random-bg/sierra-sunset-large.jpg');
+}
+
+.random-bg-5 {
+    background-image: url('../images/random-bg/vermillion-cliffs-large.jpg');
+}

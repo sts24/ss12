@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     padding: 2rem 1rem;
-    min-height: 7rem;
-
+    min-height: 9rem;
+ 
     @media (min-width: 768px){
         padding: 2rem;
+        min-height: rem(200);
     }
 }
 

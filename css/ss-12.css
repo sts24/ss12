@@ -105,10 +105,11 @@ p {
   display: flex;
   align-items: center;
   padding: 2rem 1rem;
-  min-height: 7rem; }
+  min-height: 9rem; }
   @media (min-width: 768px) {
     .site-header {
-      padding: 2rem; } }
+      padding: 2rem;
+      min-height: 9.5238095238em; } }
 
 .site-title {
   background-image: url("../images/ss-12-title.svg");
@@ -125,6 +126,43 @@ p {
 .page-title {
   padding: 3rem 0;
   background-color: #0b1631; }
+
+.random-bg {
+  position: relative;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .random-bg > * {
+    position: relative;
+    z-index: 10; }
+  .random-bg::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.25;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url("../images/waves-light.svg");
+    background-size: 100px auto; }
+
+.random-bg-1 {
+  background-image: url("../images/random-bg/anacappa-large.jpg"); }
+
+.random-bg-2 {
+  background-image: url("../images/random-bg/haleakala-large.jpg"); }
+
+.random-bg-3 {
+  background-image: url("../images/random-bg/joshua-tree-large.jpg"); }
+
+.random-bg-4 {
+  background-image: url("../images/random-bg/sierra-sunset-large.jpg"); }
+
+.random-bg-5 {
+  background-image: url("../images/random-bg/vermillion-cliffs-large.jpg"); }
 
 .hamburger-button {
   appearance: none;

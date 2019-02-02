@@ -114,6 +114,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/css/_parts/_random-bg.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_parts/_random-bg.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/_parts/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -319,6 +332,61 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/random-bg/anacappa-large.jpg": {
+		"ft": 16384,
+		"iS": 35643,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/random-bg/anacappa-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/random-bg/haleakala-large.jpg": {
+		"ft": 16384,
+		"iS": 33188,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/random-bg/haleakala-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/random-bg/joshua-tree-large.jpg": {
+		"ft": 16384,
+		"iS": 43730,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/random-bg/joshua-tree-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/random-bg/sierra-sunset-large.jpg": {
+		"ft": 16384,
+		"iS": 25135,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/random-bg/sierra-sunset-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/random-bg/vermillion-cliffs-large.jpg": {
+		"ft": 16384,
+		"iS": 34172,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/random-bg/vermillion-cliffs-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/ss-12-title.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -414,6 +482,13 @@
 		"oAP": "/single-projects.php",
 		"oF": 0
 		},
+	"/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single.php",
+		"oF": 0
+		},
 	"/SS-12.code-workspace": {
 		"cB": 0,
 		"ft": 8192,
@@ -457,6 +532,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/template-parts/portfolio-item.php",
+		"oF": 0
+		},
+	"/template-parts/post-item-listing.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/post-item-listing.php",
 		"oF": 0
 		}
 	},

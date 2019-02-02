@@ -1,6 +1,10 @@
+
+<?php echo '<!-- '.get_page_template(). ' -->'; ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,7 +25,7 @@
 <div id="site">
 
 <?php if(!is_page('home')){ ?>
-<header class="site-header blue-waves-bg">
+<header class="site-header random-bg <? echo 'random-bg-'.rand(1,5); ?>">
 	<a href="<?php bloginfo('url'); ?>" class="site-title">
 		<span class="hide"><?php bloginfo('name'); ?></span>
 	</a>

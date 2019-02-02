@@ -51,8 +51,10 @@ body {
     }
 }
 
-@import '_parts/typography.scss';
+@import '_parts/typography';
 @import '_parts/header';
+@import '_parts/random-bg';
+
 @import '_parts/nav';
 @import '_parts/content';
 @import '_parts/portfolio';
