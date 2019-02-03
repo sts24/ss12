@@ -220,6 +220,7 @@ p {
   @media (min-width: 768px) {
     .site-nav {
       width: 50%;
+      max-width: 640px;
       padding: 3rem;
       border-width: 1rem; } }
 
