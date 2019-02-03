@@ -67,7 +67,7 @@ a {
   a:hover {
     color: #ed915e; }
 
-.btn {
+.btn, .wp-block-button {
   font-size: 0.8571428571em;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
@@ -77,10 +77,14 @@ a {
   padding: 0.5rem 1rem 0.2rem 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 100px; }
-  .btn:hover {
+  border-radius: 100px;
+  display: inline-block; }
+  .btn:hover, .wp-block-button:hover {
     background-color: #1a336f;
     color: white; }
+
+.wp-block-button a {
+  color: white; }
 
 h1 {
   font-family: "Crete", serif;

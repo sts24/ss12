@@ -21,11 +21,17 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 100px;
+    display: inline-block;
 
     &:hover {
         background-color: $color1_light;
         color: white;
     }
+}
+
+.wp-block-button {
+    @extend .btn;
+    a { color: white; }
 }
 
 
