@@ -17,9 +17,10 @@ a {
     background: $color2;
     color: white;
     line-height: 1em;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.2rem 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    border-radius: 100px;
 
     &:hover {
         background-color: $color1_light;
