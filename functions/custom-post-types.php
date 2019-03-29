@@ -70,7 +70,7 @@ function cptui_register_my_cpts_portfolio() {
 	);
 
     register_post_type( "portfolio", $portfolio );
-    register_post_type( "projects", $projects );
+    //register_post_type( "projects", $projects );
 }
 
 add_action( 'init', 'cptui_register_my_cpts_portfolio' );

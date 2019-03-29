@@ -30,31 +30,27 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="site">
 
-<?php if(!is_page('home')){ ?>
+
 <header class="site-header random-bg <? echo 'random-bg-'.rand(1,5); ?>">
 	<a href="<?php bloginfo('url'); ?>" class="site-title">
 		<span class="hide"><?php bloginfo('name'); ?></span>
 	</a>
+
+
+	<?php 
+		$site_nav = wp_nav_menu(array(
+			'theme_location' => 'site_nav',
+			'menu_id' => 'site-nav-list',
+			'menu_class' => 'site-nav-list',
+			'container' => '',
+			'depth' => 1
+		)); 
+
+	?>
+
+	
 </header>
-<?php } ?>
 
-<button class="hamburger-button" id="site-nav-btn" aria-label="Site Menu Button"></button>
-
-<div class="overlay site-nav-overlay" id="site-nav-overlay">
-	<nav id="site-nav" class="site-nav">
-
-		<?php 
-			$site_nav = wp_nav_menu(array(
-				'theme_location' => 'site_nav',
-				'menu_id' => 'site-nav-list',
-				'menu_class' => 'site-nav-list',
-				'container' => '',
-				'depth' => 1
-			)); 
-
-		?>
-
-	</nav>
-</div>

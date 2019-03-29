@@ -173,39 +173,6 @@ p {
 .random-bg-5 {
   background-image: url("../images/random-bg/vermillion-cliffs-large.jpg"); }
 
-.hamburger-button {
-  appearance: none;
-  border: 0;
-  position: fixed;
-  z-index: 1100;
-  top: 2rem;
-  right: 2rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: #e6621a;
-  background-image: url("../images/hamburger-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 1rem 1rem;
-  background-position: center center;
-  cursor: pointer; }
-  .hamburger-button:hover {
-    box-shadow: 0 0 0 0.25rem #5edd9e; }
-  .hamburger-button:focus {
-    box-shadow: 0 0 0 0.25rem #5edd9e; }
-  .hamburger-button:active {
-    background-color: #a14412; }
-  .overlay-on .hamburger-button {
-    z-index: 1100;
-    background-image: url("../images/x-icon.svg"); }
-  @media (min-width: 768px) {
-    .hamburger-button {
-      width: 5rem;
-      height: 5rem;
-      background-size: 2rem 2rem;
-      transform: translateY(-50%);
-      top: calc(200px / 2 + 1rem); } }
-
 .site-nav {
   display: none;
   position: absolute;
@@ -263,7 +230,8 @@ p {
       letter-spacing: 1px;
       padding: 1rem;
       line-height: 1em;
-      margin: auto; }
+      margin: auto;
+      text-decoration: none; }
       .special-links > li > a:hover {
         background-color: #1a336f; }
       .special-links > li > a::before {
