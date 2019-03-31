@@ -76,3 +76,62 @@
         background-image: url('../images/dv-large.jpg');
     }
 }
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: minmax(auto, 400px);
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0;
+    grid-gap: 3rem;
+
+    @media (min-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    >li {
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        &::after {
+            display: block;
+            content: '';
+            @include blue-waves-bg;
+            position: absolute;
+            bottom: -.5rem;
+            right: -.5rem;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.featured-grid-item {
+    display: block;
+    position: relative;
+    z-index: 10;
+    
+    >img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    >header {
+        background-color: $color2;
+        display: inline-block;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        line-height: 1.2em;
+        
+        padding: 0.5rem 1rem;
+    }
+
+    
+}

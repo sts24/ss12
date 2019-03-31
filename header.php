@@ -31,10 +31,14 @@
 
 <body <?php body_class(); ?>>
 
+<?php include_once('images/sprite.svg'); ?>
+
 <div id="site">
 
 
 <header class="site-header random-bg <? echo 'random-bg-'.rand(1,5); ?>">
+<div class="site-content site-masthead">
+
 	<a href="<?php bloginfo('url'); ?>" class="site-title">
 		<span class="hide"><?php bloginfo('name'); ?></span>
 	</a>
@@ -50,7 +54,7 @@
 		)); 
 
 	?>
-
+</div>
 	
 </header>
 

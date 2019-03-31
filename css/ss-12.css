@@ -108,6 +108,7 @@ p {
 
 .site-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem;
   min-height: 9rem; }
@@ -123,14 +124,15 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  max-width: 200px; }
+  max-width: 200px;
+  margin: 0 auto 1rem auto; }
   .site-title::after {
     content: '';
     display: block;
     padding-top: 15.812%; }
   @media (min-width: 1200px) {
     .site-title {
-      max-width: 400px; } }
+      max-width: 300px; } }
 
 .page-title {
   padding: 3rem 0;
@@ -173,44 +175,25 @@ p {
 .random-bg-5 {
   background-image: url("../images/random-bg/vermillion-cliffs-large.jpg"); }
 
-.site-nav {
-  display: none;
-  position: absolute;
-  z-index: 1010;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 0.5rem solid #e6621a;
-  padding: 1rem 2rem;
-  text-align: center;
-  cursor: default;
-  color: #102046; }
-  .overlay-on .site-nav {
-    display: block; }
-  @media (min-width: 768px) {
-    .site-nav {
-      width: 50%;
-      max-width: 640px;
-      padding: 3rem;
-      border-width: 1rem; } }
-
 .site-nav-list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0; }
   .site-nav-list > li {
     padding: 0;
-    margin: 0 0; }
+    margin: 0; }
     .site-nav-list > li > a {
       display: block;
       font-family: "Crete", serif;
-      font-size: 1.7142857143em;
-      color: #e6621a;
-      padding: 1rem; }
+      font-size: 1.1428571429em;
+      color: white;
+      padding: 0.5rem 1rem;
+      line-height: 1em;
+      text-shadow: 1px 1px 0px #e6621a; }
       .site-nav-list > li > a:hover {
-        background: #fae0d1; }
+        background: #e6621a;
+        color: white; }
 
 .special-links {
   list-style: none;
@@ -234,23 +217,12 @@ p {
       text-decoration: none; }
       .special-links > li > a:hover {
         background-color: #1a336f; }
-      .special-links > li > a::before {
+      .special-links > li > a svg {
         display: block;
-        content: '';
         width: 2rem;
         height: 2rem;
         margin: 0 auto 0.5rem auto;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center; }
-      .special-links > li > a[href*="mailto"]::before {
-        background-image: url("../images/icons/paper-plane.svg"); }
-      .special-links > li > a[href*="dribbble"]::before {
-        background-image: url("../images/icons/dribbble.svg"); }
-      .special-links > li > a[href*="github"]::before {
-        background-image: url("../images/icons/github.svg"); }
-      .special-links > li > a[href*="codepen"]::before {
-        background-image: url("../images/icons/codepen.svg"); }
+        fill: white; }
   @media (min-width: 768px) {
     .special-links > li {
       flex: 1 1 auto; } }
@@ -430,6 +402,53 @@ hr {
   @media (min-width: 1400px) {
     .home-decoration {
       background-image: url("../images/dv-large.jpg"); } }
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: minmax(auto, 400px);
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 3rem 0;
+  grid-gap: 3rem; }
+  @media (min-width: 768px) {
+    .featured-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1rem; } }
+  .featured-grid > li {
+    padding: 0;
+    margin: 0;
+    position: relative; }
+    .featured-grid > li::after {
+      display: block;
+      content: '';
+      background-color: #1a336f;
+      background-image: url("../images/waves.svg");
+      background-size: 100px auto;
+      position: absolute;
+      bottom: -.5rem;
+      right: -.5rem;
+      width: 100%;
+      height: 100%; }
+
+.featured-grid-item {
+  display: block;
+  position: relative;
+  z-index: 10; }
+  .featured-grid-item > img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .featured-grid-item > header {
+    background-color: #e6621a;
+    display: inline-block;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    line-height: 1.2em;
+    padding: 0.5rem 1rem; }
 
 .site-footer {
   text-align: center; }
