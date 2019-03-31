@@ -415,8 +415,11 @@ hr {
   grid-gap: 3rem; }
   @media (min-width: 768px) {
     .featured-grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 1rem; } }
+  @media (min-width: 1024px) {
+    .featured-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
   .featured-grid > li {
     padding: 0;
     margin: 0;
