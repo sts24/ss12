@@ -14,25 +14,28 @@ a {
     font-size: rem(18);
     font-weight: bold;
     font-family: $secondary-font;
-    background: $color2;
+    text-shadow: 0 1px 3px rgba(black,0.75);
+    background-image: linear-gradient(to bottom, $color2 0%, darken($color2,20%) 100%);
+    border: 2px solid darken($color2, 20%);
     color: white;
-    line-height: 1em;
-    padding: 0.5rem 1rem 0.2rem 1rem;
+    line-height: normal;
+    padding: 1rem 2rem 0.75rem 2rem;
+    margin: auto;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 100px;
     display: inline-block;
 
     &:hover {
-        background-color: $color1_light;
-        color: white;
+        border-color: $color2;
     }
 }
 
 .wp-block-button {
-    @extend .btn;
-    a { color: white; }
+    
+    a { @extend .btn; }
 }
+
 
 
 h1 {

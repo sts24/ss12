@@ -17,7 +17,8 @@
 
         $query = new WP_Query(array(
             'post_type' => array('portfolio'),
-            'limit' => 4
+            'limit' => 4,
+            'order' => 'asc`'
         ));
 
         echo '<ul class="featured-grid">';
