@@ -356,7 +356,8 @@ hr {
   .featured-grid > li {
     padding: 0;
     margin: 0;
-    position: relative; }
+    position: relative;
+    transition: 200ms ease-in-out transform; }
     .featured-grid > li::after {
       display: block;
       content: '';
@@ -368,6 +369,8 @@ hr {
       right: -.5rem;
       width: 100%;
       height: 100%; }
+    .featured-grid > li:hover {
+      transform: scale(1.1); }
 
 .featured-grid-item {
   display: block;
