@@ -1,81 +1,4 @@
-.home-content {
-    width: 100%;
-    
-    display: flex;
-    flex-wrap: wrap;
 
-    @media (min-width: 768px){
-        height: calc(100vh - 2rem);
-    }
-}
-
-.home-header {
-    flex: 0 0 100%;
-    order: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .site-title {
-        max-width: 400px;
-    }
-
-    @media (min-width: 768px){
-        flex: 0 0 50%;
-        order: 1;
-    }
-}
-    .home-header-contents {
-        width: 100%;
-        padding: 1rem;
-        background-color: $color1;
-        
-        h1 {
-            font-size: rem(40);
-        }
-
-        h2 {
-            font-size: rem(28);
-        }
-
-        @media (min-width: 768px){
-            padding: 10%;
-        }
-
-        @media (min-width: 1440px){
-            padding: 10% 20%;
-        }
-    }
-
-.home-decoration {
-    flex: 0 0 100%;
-    order: 1;
-    height: 30vh;
-    background-color: $color1;
-    background-image: url('../images/dv-small.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    &::before {
-        display: block;
-        content: '';
-        height: 100%;
-        opacity: 0.25;
-        @include light-waves-bg;
-    }
-
-    @media (min-width: 768px){
-        flex: 0 0 50%;
-        order: 2;
-        height: auto;
-        background-image: url('../images/dv-medium.jpg');
-    }
-
-    @media (min-width: 1400px){
-        background-image: url('../images/dv-large.jpg');
-    }
-}
 
 .featured-grid {
     display: grid;
@@ -88,7 +11,7 @@
 
     @media (min-width: 768px){
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
+        grid-gap: 2rem;
     }
 
     @media (min-width: 1024px){

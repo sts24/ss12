@@ -1,16 +1,12 @@
 .site-header {
     display: flex;
+    background-color: $color1;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem;
-    min-height: 9rem;
- 
-    > .site-masthead {
-        //text-align: center;
-    }
+    padding: 2rem 0;
 
     @media (min-width: 768px){
-        padding: 2rem;
+        padding: 2rem 0;
         min-height: rem(200);
     }
 }
@@ -22,7 +18,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    max-width: 200px;
+    min-width: 200px;
+    max-width: 40vw;
     margin: 0 auto 1rem auto;
     
     &::after {
@@ -31,14 +28,18 @@
         padding-top: 15.812%;
     }
 
-    @media (min-width: 1200px){
-        max-width: 300px;
+    @media (min-width: 1024px){
+        max-width: 400px;
     }
 }
 
 
 .page-title {
-    padding: 3rem 0;
+    padding: 1rem 0;
     color: $color-bg;
-    background-color: darken($color1,5%);
+    background-color: $color1-dark;
+
+    @media (min-width: 768px){
+        padding: 3rem 0;
+    }
 }

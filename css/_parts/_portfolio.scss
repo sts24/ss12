@@ -2,7 +2,7 @@
     margin: 2rem auto;
     padding: 0;
 
-    @include blue-waves-bg;
+    //@include blue-waves-bg;
 
     @media (min-width: 768px){
         display: grid;
@@ -41,13 +41,16 @@
 
 .listing-content {
     font-size: em(21);
+    line-height: 1.5em;
     padding: 2rem;
-    background-color: $color1_light;
+    background-color: $color1-light;
+    color: white;
 
     h2 {
         margin: 0;
 
         a { color: white; }
+        a:hover { text-decoration: none; }
     }
 
     @media (min-width: 768px){
@@ -55,9 +58,6 @@
         grid-row: 2 / 3;
     }
 
-    @media (min-width: 1200px){
-        
-    }
 }
 
 .wp-block-media-text {

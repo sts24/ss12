@@ -20,6 +20,7 @@
             &:hover {
                 background: $color2;
                 color: white;
+                text-decoration: none;
             }
         }
     }
@@ -50,7 +51,8 @@
             text-decoration: none;
 
             &:hover {
-                background-color: $color1_light;
+                background-color: $highlight;
+                color: white;
             }
 
             svg {

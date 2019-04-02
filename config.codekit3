@@ -189,6 +189,22 @@
 		"oAP": "/fonts/josefinsans-regular-webfont.woff",
 		"oF": 0
 		},
+	"/fonts/OpenSans-Bold-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-Bold-webfont.woff",
+		"oF": 0
+		},
+	"/fonts/OpenSans-Regular-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-Regular-webfont.woff",
+		"oF": 0
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
