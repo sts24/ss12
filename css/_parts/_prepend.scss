@@ -53,3 +53,9 @@ $body-font: $secondary-font;
     background-image: url('../images/waves-light.svg');
     background-size: 100px auto;
 }
+
+@mixin chevron-pattern {
+    background-color: $color1;
+    background-image: url('../images/chevron-pattern.svg');
+    background-size: auto 120px;
+}

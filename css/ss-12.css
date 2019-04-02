@@ -129,10 +129,12 @@ p {
 
 .site-header {
   display: flex;
-  background-color: #102046;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  background-color: #102046;
+  background-image: url("../images/chevron-pattern.svg");
+  background-size: auto 120px; }
   @media (min-width: 768px) {
     .site-header {
       padding: 2rem 0;
