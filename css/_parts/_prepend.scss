@@ -1,13 +1,15 @@
 // colors
 
-$navy: desaturate(#0e1f48,5%);
-$red: #f93122;
-$orange:desaturate(#FF5A00,20%);
+$navy: #102046;
+$orange: #e6621a;
 $teal: #5edd9e;
-$gold: #f1df15;
+$lightgray: #ebebeb;
+$darkgray: #333;
 
 $color1: $navy;
 $color2: $orange;
+$color-bg: $lightgray;
+$body-color: $darkgray;
 $link-color: $orange;
 $highlight: $teal;
 

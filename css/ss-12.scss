@@ -7,7 +7,7 @@
 
 body {
 	background: $color1;
-	color: white;
+	color: $body-color;
 	font-family: $body-font;
 	font-size: 21px;
     line-height: 1.5em;
@@ -53,7 +53,7 @@ body {
 
 @import '_parts/typography';
 @import '_parts/header';
-@import '_parts/random-bg';
+
 
 @import '_parts/nav';
 @import '_parts/content';

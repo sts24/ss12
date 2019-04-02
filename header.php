@@ -36,7 +36,7 @@
 <div id="site">
 
 
-<header class="site-header random-bg <? echo 'random-bg-'.rand(1,5); ?>">
+<header class="site-header">
 <div class="site-content site-masthead">
 
 	<a href="<?php bloginfo('url'); ?>" class="site-title">

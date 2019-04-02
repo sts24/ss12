@@ -21,7 +21,7 @@
 
 body {
   background: #102046;
-  color: white;
+  color: #333;
   font-family: "Josefin Sans", sans-serif;
   font-size: 21px;
   line-height: 1.5em;
@@ -37,7 +37,7 @@ body {
       border-width: 1rem; } }
 
 .blue-waves-bg {
-  background-color: #1a336f;
+  background-color: #193370;
   background-image: url("../images/waves.svg");
   background-size: 100px auto; }
 
@@ -65,15 +65,15 @@ a {
   font-weight: bold;
   text-decoration: none; }
   a:hover {
-    color: #ed915e; }
+    color: #ee915f; }
 
 .btn, .wp-block-button a {
   font-size: 0.8571428571em;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-  background-image: linear-gradient(to bottom, #e6621a 0%, #8a3b0f 100%);
-  border: 2px solid #8a3b0f;
+  background-image: linear-gradient(to bottom, #e6621a 0%, #8b3b0f 100%);
+  border: 2px solid #8b3b0f;
   color: white;
   line-height: normal;
   padding: 1rem 2rem 0.75rem 2rem;
@@ -135,44 +135,8 @@ p {
 
 .page-title {
   padding: 3rem 0;
-  background-color: #0b1631; }
-
-.random-bg {
-  position: relative;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .random-bg > * {
-    position: relative;
-    z-index: 10; }
-  .random-bg::after {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    opacity: 0.25;
-    background-color: rgba(255, 255, 255, 0.25);
-    background-image: url("../images/waves-light.svg");
-    background-size: 100px auto; }
-
-.random-bg-1 {
-  background-image: url("../images/random-bg/anacappa-large.jpg"); }
-
-.random-bg-2 {
-  background-image: url("../images/random-bg/haleakala-large.jpg"); }
-
-.random-bg-3 {
-  background-image: url("../images/random-bg/joshua-tree-large.jpg"); }
-
-.random-bg-4 {
-  background-image: url("../images/random-bg/sierra-sunset-large.jpg"); }
-
-.random-bg-5 {
-  background-image: url("../images/random-bg/vermillion-cliffs-large.jpg"); }
+  color: #ebebeb;
+  background-color: #0b1731; }
 
 .site-nav-list {
   display: flex;
@@ -215,7 +179,7 @@ p {
       margin: auto;
       text-decoration: none; }
       .special-links > li > a:hover {
-        background-color: #1a336f; }
+        background-color: #193370; }
       .special-links > li > a svg {
         display: block;
         width: 2rem;
@@ -235,7 +199,8 @@ p {
       padding: 0 1rem; } }
 
 main.site-content {
-  padding: 3rem 1rem; }
+  padding: 3rem 1rem;
+  background-color: #ebebeb; }
 
 .intro {
   font-size: 1.1428571429em; }
@@ -267,9 +232,7 @@ hr {
   height: 1rem;
   border: 0 none;
   margin: 2rem 0;
-  background-color: #1a336f;
-  background-image: url("../images/waves.svg");
-  background-size: 100px auto;
+  background-color: #e6621a;
   display: block; }
 
 .alignright {
@@ -305,7 +268,7 @@ hr {
 .listing-item, .wp-block-media-text {
   margin: 2rem auto;
   padding: 0;
-  background-color: #1a336f;
+  background-color: #193370;
   background-image: url("../images/waves.svg");
   background-size: 100px auto; }
   @media (min-width: 768px) {
@@ -332,7 +295,7 @@ hr {
 .listing-content, .wp-block-media-text__content {
   font-size: 1em;
   padding: 2rem;
-  background-color: #1a336f; }
+  background-color: #193370; }
   .listing-content h2, .wp-block-media-text__content h2 {
     margin: 0; }
     .listing-content h2 a, .wp-block-media-text__content h2 a {
@@ -427,7 +390,7 @@ hr {
     .featured-grid > li::after {
       display: block;
       content: '';
-      background-color: #1a336f;
+      background-color: #193370;
       background-image: url("../images/waves.svg");
       background-size: 100px auto;
       position: absolute;
