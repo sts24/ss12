@@ -2,8 +2,6 @@
     margin: 2rem auto;
     padding: 0;
 
-    //@include blue-waves-bg;
-
     @media (min-width: 768px){
         display: grid;
         grid-template-columns: repeat(8,1fr);
@@ -17,7 +15,7 @@
 }
 
 .listing-image {
-    padding: 0 0 1rem 0;
+    padding: 0;
     margin: 0;
 
     img {
@@ -32,22 +30,19 @@
         padding: 0;
     }
 
-    @media (min-width: 1200px){
-       
-        
-        
-    }
 }
 
 .listing-content {
-    font-size: em(21);
+    font-size: em(16);
     line-height: 1.5em;
-    padding: 2rem;
-    background-color: $color1-light;
+    padding: 1rem;
+    background-color: $color1;
     color: white;
 
     h2 {
-        margin: 0;
+        margin: 0 0 1rem 0;
+        font-size: rem(28);
+        color: white;
 
         a { color: white; }
         a:hover { text-decoration: none; }
@@ -56,6 +51,13 @@
     @media (min-width: 768px){
         grid-column: 3 / 9;
         grid-row: 2 / 3;
+
+        padding: 2rem;
+        font-size: em(21);
+
+        h2 {
+            font-size: rem(36);
+        }
     }
 
 }

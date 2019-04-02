@@ -4,7 +4,7 @@
 // WP_Query arguments
 $args = array(
 	'post_type'              => array( 'portfolio' ),
-	'order'                  => 'ASC',
+	'order'                  => 'dsc',
 	'orderby'                => 'date',
 );
 
