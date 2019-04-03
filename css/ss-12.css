@@ -381,7 +381,8 @@ hr {
   .featured-grid-item > img {
     display: block;
     width: 100%;
-    height: auto; }
+    height: auto;
+    filter: grayscale(100%); }
   .featured-grid-item > header {
     background-color: #e6621a;
     display: inline-block;
@@ -392,6 +393,8 @@ hr {
     left: 0;
     line-height: 1.2em;
     padding: 0.5rem 1rem; }
+  li:hover .featured-grid-item img {
+    filter: grayscale(0); }
 
 .site-footer {
   text-align: center; }
