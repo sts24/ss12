@@ -131,7 +131,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: #102046;
   background-image: url("../images/chevron-pattern.svg");
   background-size: auto 120px; }
@@ -159,7 +159,7 @@ p {
       max-width: 400px; } }
 
 .page-title {
-  padding: 1rem 0;
+  padding: 1rem;
   color: #ebebeb;
   background-color: #0b1731; }
   @media (min-width: 768px) {
@@ -170,7 +170,9 @@ p {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center; }
   .site-nav-list > li {
     padding: 0;
     margin: 0; }
@@ -181,11 +183,15 @@ p {
       color: white;
       padding: 0.5rem 1rem;
       line-height: 1em;
-      text-shadow: 1px 1px 0px #e6621a; }
+      text-shadow: 1px 1px 0px #e6621a;
+      text-align: center; }
       .site-nav-list > li > a:hover {
         background: #1a9fe6;
         color: white;
         text-decoration: none; }
+  @media (min-width: 768px) {
+    .site-nav-list {
+      flex-direction: row; } }
 
 .special-links {
   list-style: none;

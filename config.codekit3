@@ -555,6 +555,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/template-parts/blog-header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/blog-header.php",
+		"oF": 0
+		},
 	"/template-parts/blog-post.php": {
 		"cB": 0,
 		"ft": 8192,

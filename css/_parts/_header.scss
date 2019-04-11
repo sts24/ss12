@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     @include chevron-pattern;
 
@@ -36,7 +36,7 @@
 
 
 .page-title {
-    padding: 1rem 0;
+    padding: 1rem;
     color: $color-bg;
     background-color: $color1-dark;
 
