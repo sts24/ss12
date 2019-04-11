@@ -4,6 +4,31 @@
         font-size: rem(36);
         //margin-bottom: 2rem;
     }
+
+    blockquote {
+        margin: 2rem 0;
+        padding: 1rem 1rem 1rem 4rem;
+        position: relative;
+
+        p {
+            font-size: rem(18);
+        }
+        
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            display: block;
+            content: '';
+            @include blue-waves-bg;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 1rem;
+        }
+    }
 }
 
 .blog-post-meta {

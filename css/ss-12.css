@@ -400,6 +400,26 @@ hr {
   color: #333;
   font-size: 2.25em; }
 
+.blog-post blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1rem 1rem 4rem;
+  position: relative; }
+  .blog-post blockquote p {
+    font-size: 1.125em; }
+  .blog-post blockquote p:last-of-type {
+    margin-bottom: 0; }
+  .blog-post blockquote:before {
+    display: block;
+    content: '';
+    background-color: #1e3c84;
+    background-image: url("../images/waves.svg");
+    background-size: 100px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 1rem; }
+
 .blog-post-meta {
   margin-bottom: 2rem; }
 
