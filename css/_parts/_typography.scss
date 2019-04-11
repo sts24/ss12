@@ -89,3 +89,7 @@ p {
 .special-heading {
     text-align: center;
 }
+
+.section-heading {
+    @extend h1;
+}

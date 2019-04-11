@@ -1,7 +1,18 @@
-<?php get_template_part('template-parts/page-title'); ?>
+<header class="page-title">
+    <div class="site-content">
+        <div class="section-heading">Journal</div>
+    </div>
+</header>
 
-<main class="site-content">
+<main class="site-content blog-post">
 
-    <?php the_content(); ?>
+    <header class="blog-post-meta">
+        <h1><?php the_title(); ?></h1>
+        <time><?php the_date(); ?></time>
+    </header>
+
+    <article class="blog-post-content">
+        <?php the_content(); ?>
+    </article>
 
 </main>
