@@ -1,5 +1,8 @@
-
-<?php echo '<!-- '.get_page_template(). ' -->'; ?>
+<?php 
+	if($_SERVER['SERVER_NAME'] == 'localhost'){
+		echo '<!-- '.get_page_template(). ' -->';
+	}
+?>
 
 <!doctype html>
 <html <?php language_attributes(); ?>>
