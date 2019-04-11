@@ -26,6 +26,9 @@
 	<meta property="og:image:width" content="1200px" />
 	<meta property="og:image:height" content="628px" />
 
+	
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed for Scott Smith's Blog Posts" href="<?php bloginfo('rss_url'); ?>" />
+
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/ss-12.css" />
 </head>
 

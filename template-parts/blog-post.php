@@ -1,8 +1,4 @@
-<header class="page-title">
-    <div class="site-content">
-        <div class="section-heading">Journal</div>
-    </div>
-</header>
+
 
 <main class="site-content blog-post">
 
