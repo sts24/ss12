@@ -402,6 +402,10 @@ hr {
   li:hover .featured-grid-item img {
     filter: grayscale(0); }
 
+.blog-post-listing-item {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem; }
+
 .blog-post h1, .blog-post .section-heading {
   color: #333;
   font-size: 2.25em; }

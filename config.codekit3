@@ -571,6 +571,14 @@
 		"oAP": "/template-parts/blog-post.php",
 		"oF": 0
 		},
+	"/template-parts/blog-posts-listing.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/blog-posts-listing.php",
+		"oF": 0
+		},
 	"/template-parts/listing-item.php": {
 		"cB": 0,
 		"ft": 8192,
