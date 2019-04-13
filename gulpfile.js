@@ -20,9 +20,19 @@ gulp.task('sass', function () {
   gulp.task('svg', function(){
     let stream = gulp.src('./svg-icons/*.svg')
     .pipe(svgSprite({
+      shape: {
+        id: {
+          generator: "icon-%s"
+        }
+      },
+      svg: {
+        xmlDeclaration: false
+      },
       mode: {
         symbol: {
           dest: '.',
+          inline: true,
+          prefix: 'icon-%s',
           bust: false,
           sprite: 'icon-sprite.svg'
         }

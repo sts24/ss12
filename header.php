@@ -37,7 +37,9 @@
 
 <body <?php body_class(); ?>>
 
-<?php include_once('images/sprite.svg'); ?>
+<div class="hide">
+<?php include_once('images/icon-sprite.svg'); ?>
+</div>
 
 <div id="site">
 
