@@ -15,21 +15,23 @@ gulp.task('sass', function () {
   });
 
 
-//   // Basic configuration example
-//   config = {
-//     mode: {
-//       symbol: true
-//     }
-//   };
 
 
-//   gulp.task('svg', function(){
-//     let stream = gulp.src('**/*.svg', { cwd: './icons/' })
-//     .pipe(svgSprite(config))
-//     .pipe(gulp.dest('out'));
+  gulp.task('svg', function(){
+    let stream = gulp.src('./svg-icons/*.svg')
+    .pipe(svgSprite({
+      mode: {
+        symbol: {
+          dest: '.',
+          bust: false,
+          sprite: 'icon-sprite.svg'
+        }
+      }
+    }))
+    .pipe(gulp.dest('./images'));
 
-//     return stream
-//   });
+    return stream
+  });
 
   gulp.task('default', [ 'sass' ]);
 
