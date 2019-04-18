@@ -1,36 +1,26 @@
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 0;
 
     @include chevron-pattern;
 
     @media (min-width: 768px){
         padding: 2rem 0;
-        min-height: rem(200);
     }
+}
+
+.site-masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .site-title {
     display: block;
-    background-image: url('../images/ss-12-title.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    min-width: 200px;
-    max-width: 40vw;
-    margin: 0 auto 1rem auto;
-    
-    &::after {
-        content: '';
-        display: block;
-        padding-top: 15.812%;
-    }
 
-    @media (min-width: 1024px){
-        max-width: 400px;
+    svg.svg-icon {
+        width: 3rem;
+        height: 3rem;
     }
 }
 

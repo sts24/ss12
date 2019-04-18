@@ -10,5 +10,12 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-formats', array( 'link' ) );
 
 
+// custom functions
+function svg_icon($icon_name){
+    echo '<svg class="svg-icon" shape-rendering="geometricPrecision">
+        <use xlink:href="#'.$icon_name.'"></use>
+    </svg>';
+}
+
 
 ?>
