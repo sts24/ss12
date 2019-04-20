@@ -13,8 +13,14 @@
             
             <h3>What I Work On</h3>
 
-            <ul class="featured-grid">
-                <li></li>
+            <ul class="icon-grid">
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/html.svg" title="HTML5" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/sass.svg" title="SASS" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/wordpress.svg" title="WordPress" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/php.svg" title="PHP" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/vue.svg" title="Vue" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/gulp.svg" title="Gulp" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/node.svg" title="Node" /></li>
             </ul>
         </div>
     </div>
