@@ -65,33 +65,32 @@
 
 <div class="site-content">
 
-    <h2>From the Journal</h2>
+    <h2>Latest from the Journal</h2>
     
     <?php
 
         $query = new WP_Query(array(
-            'posts_per_page' => 4,
+            'posts_per_page' => 1,
             'order' => 'dsc'
         ));
-
-        echo '<ul class="featured-grid">';
 
     	while ( $query->have_posts() ) {
 		    $query->the_post(); ?>
         
-            <li>
-                <a href="<?php the_permalink(); ?>" class="featured-grid-item">
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                    <header><?php the_title(); ?></header>
-                </a>
-            </li>
+            <h3>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+            </a>
+            </h3>
+
+            <?php the_excerpt(); ?>
 
         <?php }
         
-        echo '</ul>';
-        
         wp_reset_postdata();
     ?>
+
+    <a href="journal/" class="btn">Read the Journal</a>
 </div>
 </section>
 
