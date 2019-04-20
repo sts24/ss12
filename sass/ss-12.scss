@@ -1,4 +1,4 @@
-@import '_parts/prepend';
+@import '_parts/_prepend';
 
 @import '_parts/webfonts';
 
@@ -55,6 +55,8 @@ body {
     }
 }
 
+@import '_parts/grid';
+@import '_parts/colors';
 @import '_parts/typography';
 @import '_parts/header';
 

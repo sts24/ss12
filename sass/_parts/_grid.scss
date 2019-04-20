@@ -1,0 +1,12 @@
+.section-row {
+    .site-content {
+        padding: 2rem 0;
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+}

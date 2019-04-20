@@ -1,0 +1,16 @@
+.bg-gray {
+    background-color: $lightgray;
+    @include light-waves-bg;
+
+    .site-content {
+        background-color: $lightgray;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.bg-teal {
+    @extend .bg-gray;
+    background-color: $teal;
+    .site-content { background-color: $teal; }
+}

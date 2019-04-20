@@ -59,6 +59,13 @@ hr {
 
 //WP images
 
+.profile-image {
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
 .alignright {
     float: right;
     margin: 1rem 0 1rem 1rem;
