@@ -1,12 +1,16 @@
 .section-row {
     .site-content {
-        padding: 2rem 0;
+        padding: 2rem;
     }
 }
 
 
 .grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 100%;
     grid-gap: 2rem;
+
+    @media (min-width: 768px) {
+        grid-template-colums: 2fr 1fr;
+    }
 }

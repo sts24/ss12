@@ -1,13 +1,13 @@
 
 
-<main class="site-content blog-post">
+<main class="section-row blog-post">
 
-    <header class="blog-post-meta">
+    <header class="site-content blog-post-meta">
         <h1><?php the_title(); ?></h1>
         <time><?php the_date(); ?></time>
     </header>
 
-    <article class="blog-post-content">
+    <article class="site-content blog-post-content">
         <?php the_content(); ?>
     </article>
 
