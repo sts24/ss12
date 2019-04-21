@@ -3,46 +3,53 @@ var watch = require('gulp-watch');
 var fs = require('fs');
 var sass = require('gulp-sass');
 var svgSprite = require('gulp-svg-sprite');
+var autoprefixer = require('gulp-autoprefixer');
 
 // SASS
 
 gulp.task('sass', function () {
-    return gulp.src('./sass/*.scss')
-      .pipe(sass({
-          outputStyle: 'compressed'
-      }).on('error', sass.logError))
-      .pipe(gulp.dest('./css'));
-  });
+	return gulp.src('./sass/*.scss')
+		.pipe(sass({
+				outputStyle: 'compressed'
+		}).on('error', sass.logError))
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('./css'));
+});
 
 
+// make svg sprite
+
+gulp.task('svg', function(){
+	let stream = gulp.src('./svg-icons/*.svg')
+	.pipe(svgSprite({
+		shape: {
+			id: {
+				generator: "icon-%s"
+			}
+		},
+		svg: {
+			xmlDeclaration: false
+		},
+		mode: {
+			symbol: {
+				dest: '.',
+				inline: true,
+				prefix: 'icon-%s',
+				bust: false,
+				sprite: 'icon-sprite.svg'
+			}
+		}
+	}))
+	.pipe(gulp.dest('./images'));
+
+	return stream
+});
 
 
-  gulp.task('svg', function(){
-    let stream = gulp.src('./svg-icons/*.svg')
-    .pipe(svgSprite({
-      shape: {
-        id: {
-          generator: "icon-%s"
-        }
-      },
-      svg: {
-        xmlDeclaration: false
-      },
-      mode: {
-        symbol: {
-          dest: '.',
-          inline: true,
-          prefix: 'icon-%s',
-          bust: false,
-          sprite: 'icon-sprite.svg'
-        }
-      }
-    }))
-    .pipe(gulp.dest('./images'));
+// gulp tasks
+gulp.task('default', [ 'sass' ]);
 
-    return stream
-  });
-
-  gulp.task('default', [ 'sass' ]);
-
-//gulp.watch('./sass/*.scss', ['sass']);
+gulp.watch('./sass/*.scss', ['sass']);
