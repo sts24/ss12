@@ -6,7 +6,7 @@
 
             <h2>Design & Code</h2>
 
-            <p>Any web site is bigger than the sum of it’s parts. A great site needs a strong front-end framework to drive the visual experience for the user. I believe in building projects that strive for visual aesthetics, accessibility, and a code base that works in favor of the user experience.</p>
+            <p>Any web site is bigger than the sum of it’s parts. A great site needs a strong front-end framework to drive the visual experience for the user. I believe in building projects that strive for visual aesthetics, accessibility, and a code base that works in favor of the user experience. <a href="about/">More about myself</a></p>
 
         </div>
         <div class="grid-col">
