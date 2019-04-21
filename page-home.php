@@ -14,13 +14,13 @@
             <h3>What I Work On</h3>
 
             <ul class="icon-grid">
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/html.svg" title="HTML5" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/sass.svg" title="SASS" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/wordpress.svg" title="WordPress" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/php.svg" title="PHP" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/vue.svg" title="Vue" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/gulp.svg" title="Gulp" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/node.svg" title="Node" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/html.svg" alt="HTML5" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/sass.svg" alt="SASS" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/wordpress.svg" alt="WordPress" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/php.svg" alt="PHP" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/vue.svg" alt="Vue" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/gulp.svg" alt="Gulp" /></li>
+                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/node.svg" alt="Node" /></li>
             </ul>
         </div>
     </div>
@@ -48,7 +48,7 @@
             <li>
                 <a href="<?php the_permalink(); ?>" class="featured-grid-item">
                     <?php the_post_thumbnail('thumbnail'); ?>
-                    <header><?php the_title(); ?></header>
+                    <header><?php the_alt(); ?></header>
                 </a>
             </li>
 
@@ -79,7 +79,7 @@
         
             <h3>
             <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
+                <?php the_alt(); ?>
             </a>
             </h3>
 
