@@ -48,7 +48,7 @@
             <li>
                 <a href="<?php the_permalink(); ?>" class="featured-grid-item">
                     <?php the_post_thumbnail('thumbnail'); ?>
-                    <header><?php the_alt(); ?></header>
+                    <header><?php the_title(); ?></header>
                 </a>
             </li>
 
@@ -79,7 +79,7 @@
         
             <h3>
             <a href="<?php the_permalink(); ?>">
-                <?php the_alt(); ?>
+                <?php the_title(); ?>
             </a>
             </h3>
 
