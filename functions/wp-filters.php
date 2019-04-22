@@ -1,4 +1,10 @@
 <?php
+	
+	
+// enable standard custom fields
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+
+	
 
 function my_theme_archive_title( $title ) {
     if ( is_category() ) {
