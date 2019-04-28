@@ -10,11 +10,6 @@
                         RSS Feed
                     </a>
                 </li>
-                <li>
-                    <a href="<?php bloginfo('url'); ?>/archives">
-                        Archive
-                    </a>
-                </li>
             </ul>
         </nav>
     </div>
