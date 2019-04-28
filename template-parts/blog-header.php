@@ -5,6 +5,9 @@
         <nav class="blog-nav">
             <ul class="horizontal-list">
                 <li>
+                    <a href="<?php bloginfo('url'); ?>/journal">Latest Posts</a>
+                </li>
+                <li>
                     <a href="<?php bloginfo('rss_url'); ?>">
                         <?php svg_icon('icon-rss'); ?>
                         RSS Feed
