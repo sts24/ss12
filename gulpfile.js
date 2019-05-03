@@ -4,6 +4,7 @@ var fs = require('fs');
 var sass = require('gulp-sass');
 var svgSprite = require('gulp-svg-sprite');
 var autoprefixer = require('gulp-autoprefixer');
+var rename = require('gulp-rename');
 
 // SASS
 
@@ -22,30 +23,42 @@ gulp.task('sass', function () {
 
 // make svg sprite
 
-gulp.task('svg', function(){
-	let stream = gulp.src('./svg-icons/*.svg')
-	.pipe(svgSprite({
-		shape: {
-			id: {
-				generator: "icon-%s"
-			}
-		},
-		svg: {
-			xmlDeclaration: false
-		},
-		mode: {
-			symbol: {
-				dest: '.',
-				inline: true,
-				prefix: 'icon-%s',
-				bust: false,
-				sprite: 'icon-sprite.svg'
-			}
-		}
-	}))
-	.pipe(gulp.dest('./images'));
+gulp.task('svg', function () {
+	
+	let svgSrc = ['./svg-icons/general/*.svg', './svg-icons/home/*.svg'];
 
-	return stream
+	svgSrc.forEach(function (srcLoc) {
+		let srcName = srcLoc.split('/')[2];
+
+		let stream = gulp.src(srcLoc)
+			.pipe(svgSprite({
+				shape: {
+					id: {
+						generator: "icon-%s"
+					}
+				},
+				svg: {
+					xmlDeclaration: false
+				},
+				mode: {
+					symbol: {
+						dest: '.',
+						inline: true,
+						prefix: 'icon-%s',
+						bust: false,
+						sprite: 'icon-sprite-' + srcName+'.svg'
+					}
+				}
+			}))
+			.pipe(rename(function (path) {
+				//console.log(path);
+				//path.dirname = outputPath(path.dirname);
+			}))
+			.pipe(gulp.dest('./images'));
+
+		return stream
+		
+	});
 });
 
 
