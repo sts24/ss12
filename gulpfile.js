@@ -4,7 +4,6 @@ var fs = require('fs');
 var sass = require('gulp-sass');
 var svgSprite = require('gulp-svg-sprite');
 var autoprefixer = require('gulp-autoprefixer');
-var rename = require('gulp-rename');
 
 // SASS
 
@@ -49,10 +48,6 @@ gulp.task('svg', function () {
 						sprite: 'icon-sprite-' + srcName+'.svg'
 					}
 				}
-			}))
-			.pipe(rename(function (path) {
-				//console.log(path);
-				//path.dirname = outputPath(path.dirname);
 			}))
 			.pipe(gulp.dest('./images'));
 
