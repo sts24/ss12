@@ -38,7 +38,10 @@
 <body <?php body_class(); ?>>
 
 <div class="hide">
-<?php include_once('images/icon-sprite.svg'); ?>
+<?php 
+	include_once('images/icon-sprite-general.svg'); 
+	if(is_front_page()){ include_once('images/icon-sprite-home.svg'); }
+?>
 </div>
 
 <div id="site">

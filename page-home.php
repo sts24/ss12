@@ -14,13 +14,13 @@
             <h3>What I Work On</h3>
 
             <ul class="icon-grid">
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/html.svg" alt="HTML5" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/sass.svg" alt="SASS" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/wordpress.svg" alt="WordPress" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/php.svg" alt="PHP" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/vue.svg" alt="Vue" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/gulp.svg" alt="Gulp" /></li>
-                <li><img src="<?php bloginfo('template_url'); ?>/images/home-svg-icons/node.svg" alt="Node" /></li>
+                <li><?php svg_icon('icon-html'); ?></li>
+                <li><?php svg_icon('icon-sass'); ?></li>
+                <li><?php svg_icon('icon-wordpress'); ?></li>
+                <li><?php svg_icon('icon-php'); ?></li>
+                <li><?php svg_icon('icon-vue'); ?></li>
+                <li><?php svg_icon('icon-gulp'); ?></li>
+                <li><?php svg_icon('icon-node'); ?></li>
             </ul>
         </div>
     </div>
