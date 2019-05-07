@@ -1,10 +1,11 @@
 .site-nav-list {
     display: flex;
+    flex: 0 1 auto;
     list-style: none;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 
     >li {
         padding: 0;
@@ -26,11 +27,6 @@
                 text-decoration: none;
             }
         }
-    }
-
-
-    @media (min-width: 768px){
-        flex-direction: row;
     }
 }
 

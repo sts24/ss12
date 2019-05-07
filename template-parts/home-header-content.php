@@ -1,4 +1,4 @@
-<section class="row home-hero-content">
+<section class="row padding-bottom-2">
     <div class="col-s-12">
         
     <img src="https://i0.wp.com/smithscott.net/wp-content/uploads/2019/01/me.jpg?ssl=1" class="profile-image alignright" />

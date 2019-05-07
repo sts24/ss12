@@ -3,7 +3,6 @@
         <div class="col-s-12">
             <div class="section-heading">Journal</div>
 
-            
             <nav class="blog-nav">
                 <ul class="horizontal-list">
                     <li>

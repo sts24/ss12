@@ -48,7 +48,7 @@
 
 
 <header class="site-header">
-	<div class="row row-spaced padding-x-2 site-masthead">
+	<div class="row row-spaced row-vertical-center row-no-wrap padding-x-2 site-masthead">
 
 		<a href="<?php bloginfo('url'); ?>" class="col-auto site-title" title="<?php bloginfo('name'); ?>" aria-label="<?php bloginfo('name'); ?>" role="title">
 			<?php svg_icon('icon-s-mark'); ?>
