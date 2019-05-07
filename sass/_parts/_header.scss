@@ -1,19 +1,10 @@
 .site-header {
-    padding: 1rem 0;
     color: white;
-
     @include chevron-pattern;
-
-    @media (min-width: 768px){
-        padding: 2rem 0;
-    }
 }
 
 .site-masthead {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    
 }
 
 .site-title {
@@ -27,11 +18,6 @@
 
 
 .page-title {
-    //padding: 1rem;
     color: $color-bg;
     background-color: $color1-dark;
-
-    @media (min-width: 768px){
-        //padding: 3rem 0;
-    }
 }

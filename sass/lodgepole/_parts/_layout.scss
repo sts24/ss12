@@ -17,10 +17,15 @@
 // row styles
 .row {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	margin: auto;
 	max-width: $page_width;
 }
+	.row-no-wrap {
+		flex-wrap: nowrap;
+	}
+
 	.row-expanded {
 		max-width: none;
 	}
@@ -53,7 +58,6 @@
 
 // all columns get this
 [class^="col-"]{
-	min-height: 100px;
 	padding: 0 $base_size;
 	flex: 0 0 auto;
 }

@@ -1,13 +1,13 @@
-<section class="section-row">
-    <div class="site-content home-hero-content">
+<section class="row home-hero-content">
+    <div class="col-s-12">
         
-            <img src="https://i0.wp.com/smithscott.net/wp-content/uploads/2019/01/me.jpg?ssl=1" class="profile-image alignright" />
+    <img src="https://i0.wp.com/smithscott.net/wp-content/uploads/2019/01/me.jpg?ssl=1" class="profile-image alignright" />
 
-            <h1>Scott Smith</h1>
+    <h1>Scott Smith</h1>
 
-            <p class="intro">My name is Scott Smith. I am web developer for California Lutheran University that specializes in front-end development and design.</p>
+    <p class="intro">My name is Scott Smith. I am web developer for California Lutheran University that specializes in front-end development and design.</p>
 
-            <a href="portfolio" class="btn">View Portfolio</a>
+    <a href="portfolio" class="btn">View Portfolio</a>
 
-    </div>
+</div>
 </section>

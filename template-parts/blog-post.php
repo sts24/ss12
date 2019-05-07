@@ -1,13 +1,11 @@
+<main class="row padding-x-3 blog-post">
 
-
-<main class="section-row blog-post">
-
-    <header class="site-content blog-post-meta">
+    <header class="col-s-12 blog-post-meta margin-bottom-3">
         <h1><?php the_title(); ?></h1>
         <time><?php the_date(); ?></time>
     </header>
 
-    <article class="site-content blog-post-content">
+    <article class="col-s-12 blog-post-content">
         <?php the_content(); ?>
     </article>
 

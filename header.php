@@ -48,9 +48,9 @@
 
 
 <header class="site-header">
-	<div class="site-content site-masthead">
+	<div class="row row-spaced padding-x-2 site-masthead">
 
-		<a href="<?php bloginfo('url'); ?>" class="site-title" title="<?php bloginfo('name'); ?>" aria-label="<?php bloginfo('name'); ?>" role="title">
+		<a href="<?php bloginfo('url'); ?>" class="col-auto site-title" title="<?php bloginfo('name'); ?>" aria-label="<?php bloginfo('name'); ?>" role="title">
 			<?php svg_icon('icon-s-mark'); ?>
 		</a>
 
@@ -58,7 +58,7 @@
 			$site_nav = wp_nav_menu(array(
 				'theme_location' => 'site_nav',
 				'menu_id' => 'site-nav-list',
-				'menu_class' => 'site-nav-list',
+				'menu_class' => 'col-auto site-nav-list',
 				'container' => '',
 				'depth' => 1
 			)); 

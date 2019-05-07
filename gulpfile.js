@@ -60,4 +60,4 @@ gulp.task('svg', function () {
 // gulp tasks
 gulp.task('default', [ 'sass' ]);
 
-gulp.watch('./sass/*.scss', ['sass']);
+gulp.watch('./sass/**/*.scss', ['sass']);
