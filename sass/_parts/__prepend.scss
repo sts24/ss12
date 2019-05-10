@@ -4,6 +4,7 @@ $navy: #102046;
 $orange: #e6621a;
 $teal: #5edd9e;
 $lightgray: #ebebeb;
+$midgray: #b1b1b1;
 $darkgray: #333;
 $lightblue: #1a9fe6;
 
@@ -49,7 +50,7 @@ $body-font: $secondary-font;
 }
 
 @mixin light-waves-bg {
-	background-color: rgba(white,0.25);
+	background-color: $midgray;
     background-image: url('../images/waves-light.svg');
     background-size: 100px auto;
 }

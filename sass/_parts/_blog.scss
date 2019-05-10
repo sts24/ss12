@@ -26,6 +26,13 @@
 
 .blog-post-listing-item {
 
+    &::after {
+        content: '';
+        display: block;
+        @include light-waves-bg;
+        height: 1em;
+        margin-top: 3em;
+    }
 }
 
 .blog-post {
