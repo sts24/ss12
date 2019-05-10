@@ -1,20 +1,30 @@
-<?php get_header();
+<?php 
 
+get_header();
 get_template_part( 'template-parts/blog-header' );
 
-echo '<main class="row padding-bottom-3">';
+?>
 
+<main class="row padding-bottom-3">
 
-if (have_posts() ) {
-	while (have_posts() ) {
-		the_post();
-		get_template_part( 'template-parts/blog-posts-listing' );
-	}
-} else {
-	// no posts found
-}
+	<?php if (have_posts() ) { ?>
+		<?php while (have_posts() ) {
+			the_post();
+			get_template_part( 'template-parts/blog-posts-listing' );
+		}
+		?>
+		
+		<div class="row row-spaced">
+			<div><?php previous_posts_link( 'Older posts' ); ?></div>
+			<div><?php next_posts_link( 'Newer posts' ); ?></div>
+		</div>
 
+	<?php } else {
+		// no posts found
+	} ?>
 
-echo '</main>';
+	
 
-get_footer(); ?>
+</main>
+
+<?php get_footer(); ?>
