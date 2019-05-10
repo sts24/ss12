@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="row">
+<section class="row padding-bottom-3">
     <div class="col-s-12 col-m-8">
 
         <h2>Design & Code</h2>
@@ -26,7 +26,7 @@
 </section>
 
 
-<section class="row">
+<section class="row padding-bottom-3">
 
     <div class="col-s-12">
         <h2>Featured Work</h2>
@@ -75,12 +75,7 @@
             while ( $query->have_posts() ) {
                 $query->the_post(); ?>
             
-                <h3>
-                <a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?>
-                </a>
-                </h3>
-
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                 <?php the_excerpt(); ?>
 
             <?php }
@@ -88,7 +83,7 @@
             wp_reset_postdata();
         ?>
 
-        <a href="journal/" class="btn">Read the Journal</a>
+        <a href="journal/" class="btn margin-top-1">Read the Journal</a>
     </div>
 </section>
 
