@@ -1,9 +1,6 @@
 <?php
 
-	$link = (get_field('URL') !== false) ? get_field('URL') : get_the_permalink();
-echo '<pre>';
-print_r(the_field('url'));
-echo '</pre>';
+	$link = (get_field('url') !== '') ? get_field('url') : get_the_permalink();
 
 ?>
 
@@ -11,7 +8,7 @@ echo '</pre>';
 <section class="col-s-12 margin-x-3 padding-bottom-3 blog-post blog-post-listing-item">
 
 	<h2 class="margin-top-0">
-		<?php if(get_field('URL') !== ''){ 
+		<?php if(get_field('url') !== ''){ 
 			echo '<div class="blog-link-icon">';
 			svg_icon('icon-link');
 			echo '</div>';
