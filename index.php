@@ -15,8 +15,8 @@ get_template_part( 'template-parts/blog-header' );
 		?>
 		
 		<div class="row row-spaced">
-			<div class="col-auto"><?php previous_posts_link( 'Older posts' ); ?></div>
-			<div class="col-auto"><?php next_posts_link( 'Newer posts' ); ?></div>
+			<div class="col-auto"><?php next_posts_link( 'Older Posts' ); ?></div>
+			<div class="col-auto"><?php previous_posts_link( 'Newer Posts' ); ?></div>
 		</div>
 
 	<?php } else {
