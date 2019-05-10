@@ -2,7 +2,7 @@
 
 	$link = (get_field('URL') !== false) ? get_field('URL') : get_the_permalink();
 echo '<pre>';
-print_r(get_field('url'));
+print_r(the_field('url'));
 echo '</pre>';
 
 ?>
@@ -13,7 +13,7 @@ echo '</pre>';
 	<h2 class="margin-top-0">
 		<?php if(get_field('URL') !== ''){ 
 			echo '<div class="blog-link-icon">';
-			svg_icon('icon-link'); 
+			svg_icon('icon-link');
 			echo '</div>';
 		} ?>
 		<a href="<?php echo $link; ?>"><?php the_title(); ?></a>
