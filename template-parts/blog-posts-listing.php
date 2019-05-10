@@ -2,7 +2,7 @@
 
 	$link = (get_field('URL') !== false) ? get_field('URL') : get_the_permalink();
 echo '<pre>';
-print_r(get_field('URL'));
+print_r(get_field('url'));
 echo '</pre>';
 
 ?>
