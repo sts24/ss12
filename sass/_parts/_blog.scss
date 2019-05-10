@@ -26,6 +26,15 @@
 
 .blog-post-listing-item {
 
+    h2 svg {
+        display: inline;
+        width: 1em;
+        height: 1em;
+        line-height: 1em;
+        vertical-align: baseline;
+        fill: $color1;
+    }
+
     &::after {
         content: '';
         display: block;
