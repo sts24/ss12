@@ -13,13 +13,13 @@
         <h3>What I Work On</h3>
 
         <ul class="icon-grid">
-            <li><?php svg_icon('icon-html'); ?></li>
-            <li><?php svg_icon('icon-sass'); ?></li>
-            <li><?php svg_icon('icon-wordpress'); ?></li>
-            <li><?php svg_icon('icon-php'); ?></li>
-            <li><?php svg_icon('icon-vue'); ?></li>
-            <li><?php svg_icon('icon-gulp'); ?></li>
-            <li><?php svg_icon('icon-node'); ?></li>
+            <li><?php svg_icon('icon-html','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-sass','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-wordpress','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-php','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-vue','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-gulp','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-node','icon-size-3'); ?></li>
         </ul>
 
     </div>

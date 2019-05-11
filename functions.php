@@ -16,8 +16,9 @@ function theme_setup(){
 add_action( 'after_setup_theme', 'theme_setup' );
 
 // custom functions
-function svg_icon($icon_name){
-    echo '<svg class="svg-icon" shape-rendering="geometricPrecision">
+function svg_icon($icon_name,$class=null){
+    $class = isset($class) ? 'svg-icon '.$class : 'svg-icon';
+    echo '<svg class="'. $class .'" shape-rendering="geometricPrecision">
         <use xlink:href="#'.$icon_name.'"></use>
     </svg>';
 }

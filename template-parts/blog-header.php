@@ -10,7 +10,7 @@
                     </li>
                     <li>
                         <a href="<?php bloginfo('rss_url'); ?>">
-                            <?php svg_icon('icon-rss'); ?>
+                            <?php svg_icon('icon-rss','icon-size-1 icon-inline'); ?>
                             RSS Feed
                         </a>
                     </li>

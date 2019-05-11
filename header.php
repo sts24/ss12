@@ -51,7 +51,7 @@
 	<div class="row row-spaced row-vertical-center row-no-wrap padding-x-2 site-masthead">
 
 		<a href="<?php bloginfo('url'); ?>" class="col-auto site-title" title="<?php bloginfo('name'); ?>" aria-label="<?php bloginfo('name'); ?>" role="title">
-			<?php svg_icon('icon-s-mark'); ?>
+			<?php svg_icon('icon-s-mark','icon-size-3'); ?>
 		</a>
 
 		<?php 

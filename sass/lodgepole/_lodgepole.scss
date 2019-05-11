@@ -1,6 +1,6 @@
 // variables
 $page_width: 1200px;
-$base_size: 1em;
+$base_size: 1rem;
 
 // breakpoints
 $breakpoints: (
@@ -20,3 +20,4 @@ $base_col: (100% / $columns);
 @import '_parts/utilities';
 @import '_parts/content';
 @import '_parts/typography';
+@import '_parts/icons';
