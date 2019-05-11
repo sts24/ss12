@@ -10,7 +10,11 @@ get_template_part( 'template-parts/blog-header' );
 	<?php if (have_posts() ) { ?>
 		<?php while (have_posts() ) {
 			the_post();
-			get_template_part( 'template-parts/blog-posts-listing' );
+			if( has_post_format( 'link' )){
+				get_template_part( 'template-parts/blog-link-listing' );
+			} else {
+				get_template_part( 'template-parts/blog-posts-listing' );
+			}
 		}
 		?>
 		
