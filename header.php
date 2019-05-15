@@ -44,8 +44,6 @@
 ?>
 </div>
 
-<div id="site">
-
 
 <header class="site-header">
 	<div class="row row-spaced row-vertical-center row-no-wrap padding-x-2 site-masthead">

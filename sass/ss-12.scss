@@ -1,10 +1,6 @@
 @import '_parts/_prepend';
-
 @import '_parts/webfonts';
-
 @import 'lodgepole/lodgepole';
-
-* { box-sizing: border-box; }
 
 body {
 	background: $color-bg;
@@ -14,43 +10,8 @@ body {
     line-height: 1.75em;
     padding: 0;
     margin: 0;
-
 }
 
-#site { 
-    border: 0.5rem solid $color2; 
-    min-height: 100vh; 
-    position: relative;
-
-    @media (min-width: 768px){
-        border-width: 1rem;
-    }
-}
-
-.blue-waves-bg {
-    @include blue-waves-bg;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1000;
-    display: none;
-    cursor: pointer;
-    border: 0.5rem solid $color2;
-    @include light-waves-bg;
-
-    .overlay-on & {
-        display: block;
-    }
-
-    @media (min-width: 768px){
-        border-width: 1rem;
-    }
-}
 
 @import '_parts/grid';
 @import '_parts/colors';
@@ -65,7 +26,3 @@ body {
 @import '_parts/home';
 @import '_parts/blog';
 @import '_parts/footer';
-
-.hide {
-    display: none;
-}
