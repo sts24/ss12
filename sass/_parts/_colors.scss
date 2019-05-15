@@ -12,3 +12,7 @@
     background-color: $teal;
     .site-content { background-color: $teal; }
 }
+
+.blue-waves-bg {
+    @include blue-waves-bg;
+}

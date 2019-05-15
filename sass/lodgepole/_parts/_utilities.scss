@@ -50,6 +50,10 @@
 
 // hide on breakpoint
 
+.hide {
+    display: none;
+}
+
 @each $name, $size in $breakpoints {
 	@if $size != '' {
 		@media (min-width: $size){
