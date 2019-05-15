@@ -39,22 +39,16 @@
         padding: 0;
         margin: 0;
         position: relative;
-        transition: 200ms ease-in-out transform;
-
 
         &::after {
             display: block;
             content: '';
             @include blue-waves-bg;
             position: absolute;
-            bottom: -.5rem;
-            right: -.5rem;
-            width: 100%;
+            bottom: -0.5rem;
+            right: 0.5rem;
+            left: 0.5rem;
             height: 100%;
-        }
-
-        &:hover {
-            transform: scale(1.1);
         }
     }
 }
