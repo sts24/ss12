@@ -78,9 +78,12 @@
         padding: 0.5rem 1rem;
     }
 
-    li:hover & img {
-        filter: grayscale(0);
+    li:hover & {
+        header { background-color: $highlight; }
+        img { filter: grayscale(0); }
     }
+
+    
    
 
     
