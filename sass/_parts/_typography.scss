@@ -34,7 +34,7 @@ a {
     }
 
     &:hover {
-        background-image: linear-gradient(to bottom, $color2 0%, lighten($color2,15%) 100%);
+        background-color: $highlight;
         text-decoration: none;
     }
 }
