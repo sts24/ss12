@@ -5,6 +5,6 @@
     <div class="listing-content">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn">More</a>
+        <a href="<?php the_permalink(); ?>" class="btn">View More</a>
     </div>
 </section>
