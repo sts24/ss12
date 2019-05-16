@@ -35,19 +35,15 @@
 }
 
 .listing-content {
-    font-size: em(16);
-    line-height: 1.5em;
-    padding: 1rem;
+    padding: $base_size;
     background-color: $color1;
     color: white;
 
     h2 {
         margin: 0 0 1rem 0;
-        font-size: rem(28);
         color: white;
 
         a { color: white; }
-        a:hover { text-decoration: none; }
     }
 
     @media (min-width: 768px){
@@ -55,11 +51,6 @@
         grid-row: 1 / 2;
 
         padding: 2rem;
-        font-size: em(21);
-
-        h2 {
-            font-size: rem(36);
-        }
     }
 
 }
