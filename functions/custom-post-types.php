@@ -32,7 +32,7 @@ function cptui_register_my_cpts_portfolio() {
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "portfolio", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail" ),
+		"supports" => array( "title", "editor", "excerpt", "thumbnail" ),
 		"taxonomies" => array( "category", "post_tag" ),
     );
     
