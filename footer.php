@@ -9,7 +9,7 @@
             
             ?>
                 <li class="menu-item">
-                    <a href="<?php echo $item->url; ?>" title="<?php echo $item->title; ?>">
+                    <a href="<?php echo $item->url; ?>" title="<?php echo $item->title; ?>" rel="me">
                         <?php svg_icon(get_field('css_classes', $item->ID),'icon-size-2'); ?>
                         <span><?php echo $item->title; ?></span>
                     </a>
