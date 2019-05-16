@@ -29,7 +29,6 @@
 
     @media (min-width : 768px){
         grid-column: 1 / 4;
-        grid-row: 1 / 2;
     }
 
 }
@@ -44,12 +43,11 @@
         color: white;
 
         a { color: white; }
+        a:hover { text-decoration: none; color: $color2; }
     }
 
     @media (min-width: 768px){
         grid-column: 4 / 9;
-        grid-row: 1 / 2;
-
         padding: 2rem;
     }
 
