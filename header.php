@@ -28,11 +28,15 @@
 	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/share-image.jpg" />
 	<meta property="og:image:width" content="1200px" />
 	<meta property="og:image:height" content="628px" />
-
 	
 	<link rel="alternate" type="application/rss+xml" title="RSS Feed for Scott Smith's Blog Posts" href="<?php bloginfo('rss_url'); ?>" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php bloginfo('pingback_url'); ?>">
+
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/ss-12.css" />
+	
+
+
 </head>
 
 <body <?php body_class(); ?>>
