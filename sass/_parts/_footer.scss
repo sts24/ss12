@@ -9,6 +9,10 @@
 
     .special-links {
         margin: 0;
+
+        .svg-icon svg {
+            fill: white;
+        }
     }
 }
 

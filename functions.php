@@ -24,4 +24,18 @@ function svg_icon($icon_name,$class=null){
 }
 
 
+// inline tag list
+function inlineTagList(){
+    $tags = get_the_tags();
+
+    if($tags){
+        echo '<ul class="list-inline tag-list">';
+        foreach($tags as $key=>$item){
+            echo '<li>'. $item->name .'</li>';
+        }
+        echo '</ul>';
+    }
+}
+
+
 ?>

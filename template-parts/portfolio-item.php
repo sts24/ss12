@@ -4,6 +4,7 @@
 </header>
 
 <div class="portfolio-item-content">
+    <?php inlineTagList(); ?>
     <?php the_content(); ?>
 </div>
 
