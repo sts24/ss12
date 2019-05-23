@@ -75,9 +75,12 @@
             while ( $query->have_posts() ) {
                 $query->the_post(); ?>
             
-                <?php postTitle('h3'); ?>
-                <?php the_excerpt(); ?>
-                <a href="<?php the_permalink(); ?>" class="btn margin-top-1">Read More</a>
+                <?php                 
+                    postTitle('h3');
+                    echo '<p>'. get_the_excerpt() .'... <a href="'. get_the_permalink() .'">Read More</a></p>';
+                ?>
+
+                <a href="journal/" class="btn margin-top-1">Read the Journal</a>
 
             <?php }
             
