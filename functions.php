@@ -38,4 +38,19 @@ function inlineTagList(){
 }
 
 
+// blog title
+function postTitle($tag,$class=null){
+    $class = (isset($class)) ? 'class="'.$class.'"' : '';
+    ?>
+        <<?php echo $tag.' '.$class;?>>
+            <?php if( has_post_format( 'link' )){ ?>
+                <?php svg_icon('icon-link','icon-size-1 icon-inline blog-link-icon'); ?>
+                <a href="<?php echo get_field('url'); ?>"><?php the_title(); ?></a>
+            <?php } else { ?>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <?php } ?>
+        </<?php echo $tag; ?>>
+<?php }
+
+
 ?>

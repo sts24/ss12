@@ -64,7 +64,7 @@
     <div class="col-s-12">
 
         <h2>Latest from the Journal</h2>
-        
+
         <?php
 
             $query = new WP_Query(array(
@@ -75,15 +75,16 @@
             while ( $query->have_posts() ) {
                 $query->the_post(); ?>
             
-                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <?php postTitle('h3'); ?>
                 <?php the_excerpt(); ?>
+                <a href="<?php the_permalink(); ?>" class="btn margin-top-1">Read More</a>
 
             <?php }
             
             wp_reset_postdata();
         ?>
 
-        <a href="journal/" class="btn margin-top-1">Read the Journal</a>
+        
     </div>
 </section>
 
