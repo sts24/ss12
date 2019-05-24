@@ -12,17 +12,15 @@
             
         <h3 class="margin-top-0">What I Work On</h3>
 
-        <?php
-            $all_tags = get_tags();
-            
-            echo '<ul class="icon-grid">';
-            foreach($all_tags as $key=>$tag){
-                echo '<li>';
-                svg_icon('icon-'.$tag->slug,'icon-size-3');
-                echo '</li>';            
-            }
-            echo '</ul>';
-        ?>
+        <ul class="icon-grid">
+            <li><?php svg_icon('icon-html','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-sass','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-wordpress','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-php','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-vue','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-gulp','icon-size-3'); ?></li>
+            <li><?php svg_icon('icon-node','icon-size-3'); ?></li>
+        </ul>
 
     </div>
 </section>
