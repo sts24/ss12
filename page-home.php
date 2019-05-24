@@ -13,13 +13,13 @@
         <h3 class="margin-top-0">What I Work On</h3>
 
         <ul class="icon-grid">
-            <li><?php svg_icon('icon-html','icon-size-3'); ?></li>
-            <li><?php svg_icon('icon-sass','icon-size-3'); ?></li>
-            <li><?php svg_icon('icon-wordpress','icon-size-3'); ?></li>
-            <li><?php svg_icon('icon-php','icon-size-3'); ?></li>
-            <li><?php svg_icon('icon-vue','icon-size-3'); ?></li>
-            <li><?php svg_icon('icon-gulp','icon-size-3'); ?></li>
-            <li><?php svg_icon('icon-node','icon-size-3'); ?></li>
+            <li aria-label="HTML"><?php svg_icon('icon-html','icon-size-3'); ?></li>
+            <li aria-label="Sass"><?php svg_icon('icon-sass','icon-size-3'); ?></li>
+            <li aria-label="Word Press"><?php svg_icon('icon-wordpress','icon-size-3'); ?></li>
+            <li aria-label="PHP"><?php svg_icon('icon-php','icon-size-3'); ?></li>
+            <li aria-label="Vue"><?php svg_icon('icon-vue','icon-size-3'); ?></li>
+            <li aria-label="Gulp"><?php svg_icon('icon-gulp','icon-size-3'); ?></li>
+            <li aria-label="Node"><?php svg_icon('icon-node','icon-size-3'); ?></li>
         </ul>
 
     </div>
