@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-<main class="row padding-x-3">
+<main>
+<section class="row padding-x-3">
     <div class="col-s-12 col-m-8">
 
         <h2 class="margin-top-0">Design & Code</h2>
@@ -23,7 +23,7 @@
         </ul>
 
     </div>
-</main>
+</section>
 
 
 <section class="row padding-bottom-3">
@@ -45,9 +45,9 @@
                 $query->the_post(); ?>
             
                 <li>
-                    <a href="<?php the_permalink(); ?>" class="featured-grid-item">
+                    <a href="<?php the_permalink(); ?>" class="featured-grid-item" role="presentation">
                         <?php the_post_thumbnail('thumbnail'); ?>
-                        <header><?php the_title(); ?></header>
+                        <header role="button"><?php the_title(); ?></header>
                     </a>
                 </li>
 
