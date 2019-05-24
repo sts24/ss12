@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="row padding-x-3">
+<main class="row padding-x-3">
     <div class="col-s-12 col-m-8">
 
         <h2 class="margin-top-0">Design & Code</h2>
@@ -23,7 +23,7 @@
         </ul>
 
     </div>
-</section>
+</main>
 
 
 <section class="row padding-bottom-3">

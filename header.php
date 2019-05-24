@@ -41,7 +41,7 @@
 
 <body <?php body_class(); ?>>
 
-<div class="hide">
+<div class="hide" role="none">
 <?php 
 	include_once('images/icon-sprite-general.svg'); 
 	if(is_front_page()){ include_once('images/icon-sprite-home.svg'); }
@@ -52,7 +52,7 @@
 <header class="site-header">
 	<div class="row row-spaced row-vertical-center row-no-wrap padding-x-2 site-masthead">
 
-		<a href="<?php bloginfo('url'); ?>" class="col-auto site-title" title="<?php bloginfo('name'); ?>" aria-label="<?php bloginfo('name'); ?>" role="title">
+		<a href="<?php bloginfo('url'); ?>" class="col-auto site-title" title="<?php bloginfo('name'); ?>" aria-label="<?php bloginfo('name'); ?>">
 			<?php svg_icon('icon-s-mark','icon-size-3'); ?>
 		</a>
 
@@ -60,8 +60,10 @@
 			$site_nav = wp_nav_menu(array(
 				'theme_location' => 'site_nav',
 				'menu_id' => 'site-nav-list',
-				'menu_class' => 'col-auto site-nav-list',
-				'container' => '',
+				'menu_class' => 'site-nav-list',
+				'container' => 'nav',
+				'container_id' => 'site-nav',
+				'container_class' => 'col-auto',
 				'depth' => 1
 			)); 
 		?>
