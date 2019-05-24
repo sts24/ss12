@@ -45,7 +45,7 @@
                 $query->the_post(); ?>
             
                 <li>
-                    <a href="<?php the_permalink(); ?>" class="featured-grid-item" aria-labeledby="<?php echo $post->post_name; ?>">
+                    <a href="<?php the_permalink(); ?>" class="featured-grid-item" aria-labelledby="<?php echo $post->post_name; ?>">
                         <?php the_post_thumbnail('thumbnail'); ?>
                         <header role="button" id="<?php echo $post->post_name; ?>"><?php the_title(); ?></header>
                     </a>
