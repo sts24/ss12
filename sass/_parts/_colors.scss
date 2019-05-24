@@ -1,16 +1,10 @@
 .bg-gray {
-    background-color: $lightgray;
+    background-color: var(--lightgray);
     @include light-waves-bg;
 
     .site-content {
-        background-color: $lightgray;
+        background-color: var(--lightgray);
     }
-}
-
-.bg-teal {
-    @extend .bg-gray;
-    background-color: $teal;
-    .site-content { background-color: $teal; }
 }
 
 .blue-waves-bg {

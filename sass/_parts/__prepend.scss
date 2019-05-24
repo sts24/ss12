@@ -1,4 +1,32 @@
-// colors
+:root {
+
+    // colors
+    --color1: #102046;
+    --color1-dark: darken(var(--color1), 5%);
+    --color1-light: lighten(var(--color1), 15%);
+
+    --color2: #e6621a;
+    --color2-dark: #c55316;
+
+    --lightblue: #1a9fe6;
+    --highlight: var(--lightblue);
+
+    --lightgray: #ebebeb;
+    --midgray: #b1b1b1;
+    --darkgray: #333;
+    --gray: #2d2d2d;
+
+    --body-color: var(--darkgray);
+    --body-bg: var(--lightgray);
+
+    --link-color: var(--color2-dark);
+
+    // fonts
+
+    --primary-font: "Lora", serif;
+    --secondary-font: "Open Sans", sans-serif;
+    --body-font: var(--secondary-font);
+}
 
 $navy: #102046;
 $orange: #e6621a;
@@ -17,8 +45,6 @@ $color2: $orange;
 $color-bg: $lightgray;
 $body-color: $darkgray;
 $link-color: $orange;
-
-
 
 $gray: #2d2d2d;
 
@@ -44,19 +70,19 @@ $body-font: $secondary-font;
 // styles
 
 @mixin blue-waves-bg {
-	background-color: $color1-light;
+	background-color: var(--color1-light);
     background-image: url('../images/waves.svg');
     background-size: 100px auto;
 }
 
 @mixin light-waves-bg {
-	background-color: $midgray;
+	background-color: var(--midgray);
     background-image: url('../images/waves-light.svg');
     background-size: 100px auto;
 }
 
 @mixin chevron-pattern {
-    background-color: $color1;
+    background-color: var(--color1);
     background-image: url('../images/chevron-pattern.svg');
     background-size: auto 120px;
 }

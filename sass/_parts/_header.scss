@@ -1,6 +1,6 @@
 .site-header {
     color: white;
-    border-top: 1rem solid $color2;
+    border-top: 1rem solid var(--color2);
     @include chevron-pattern;
 }
 
@@ -11,6 +11,6 @@
 
 
 .page-title {
-    color: $color-bg;
-    background-color: $color1-dark;
+    color: var(--color-bg);
+    background-color: var(--color1-dark);
 }

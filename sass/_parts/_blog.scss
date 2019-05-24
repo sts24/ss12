@@ -10,7 +10,7 @@
         padding: .25rem;
 
         &:hover {
-            background-color: $color2;
+            background-color: var(--color2);
             color: white;
         }
     }
@@ -21,7 +21,7 @@
     .blog-link-icon {
         line-height: 1em;
         vertical-align: baseline;
-        fill: $color1;
+        fill: var(--color1);
     }
 
     &::after {
@@ -36,7 +36,6 @@
 .blog-post {
     h1 {
         color: $body-color;
-        //font-size: rem(36);
     }
 
     blockquote {
@@ -64,7 +63,4 @@
             width: 1rem;
         }
     }
-}
-
-.blog-post-meta {
 }
