@@ -35,7 +35,7 @@
 
 .listing-content {
     padding: $base_size;
-    background-color: $color1;
+    background-color: var(--color1);
     color: white;
 
     h2 {
@@ -43,7 +43,7 @@
         color: white;
 
         a { color: white; }
-        a:hover { text-decoration: none; color: $color2; }
+        a:hover { text-decoration: none; color: var(--color2); }
     }
 
     @media (min-width: 768px){

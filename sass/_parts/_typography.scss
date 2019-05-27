@@ -1,5 +1,5 @@
 a {
-    color: $color2;
+    color: var(--color2);
     font-weight: bold;
     text-decoration: none;
 
@@ -12,9 +12,9 @@ a {
 .btn {
     font-size: rem(16);
     font-weight: bold;
-    font-family: $secondary-font;
+    font-family: var(--secondary-font);
     text-shadow: 0 1px 1px rgba(black,0.5);
-    background-color: $color2;
+    background-color: var(--color2);
     color: white;
     line-height: normal;
     padding: .5rem 1rem;
@@ -34,7 +34,7 @@ a {
     }
 
     &:hover {
-        background-color: $highlight;
+        background-color: var(--highlight);
         text-decoration: none;
     }
 }
@@ -46,12 +46,12 @@ a {
 
 
 h1 {
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     font-weight: normal;
     font-size: rem(36);
     line-height: 1em;
     margin: 0;
-    color: $color-bg;
+    color: white;
 
     @media (min-width: 768px){
         font-size: rem(48);
@@ -63,9 +63,9 @@ h1 {
 h2 {
     font-size: rem(28);
     font-weight: normal;
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     line-height: 1em;
-    color: $color1;
+    color: var(--color1);
 
     a { font-weight: normal; }
 
@@ -75,10 +75,10 @@ h2 {
 }
 
 h3 {
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     font-weight: normal;
     font-size: rem(21);
-    color: $color1;
+    color: var(--color1);
 
     a { font-weight: normal; }
 }
