@@ -62,7 +62,7 @@
 				'menu_class' => 'site-nav-list',
 				'container' => 'nav',
 				'container_id' => 'site-nav',
-				'container_class' => 'col-auto',
+				'container_class' => '',
 				'depth' => 1
 			)); 
 		?>
