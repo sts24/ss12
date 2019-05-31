@@ -33,12 +33,12 @@
 
         <?php
 
-            $query = get_posts(array(
-                'post_type'			=> 'prtoflio',
-                'posts_per_page'	=> 4,
-                'meta_key'			=> 'highlight-post',
-                'orderby'			=> 'meta_value',
-                'order'				=> 'DESC'
+            $query = new WP_Query(array(
+                'post_type' => array('portfolio'),
+                'posts_per_page' => 4,
+                'order' => 'dsc',
+                'meta_key' => 'hightlight-post',
+                'orderby' => 'meta_value',
             ));
 
             echo '<ul class="featured-grid">';
