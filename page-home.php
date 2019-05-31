@@ -37,8 +37,8 @@
                 'post_type' => array('portfolio'),
                 'posts_per_page' => 4,
                 'order' => 'DESC',
-                'meta_key' => 'hightlight-post',
-                'meta_value' => '1'
+                'meta_key' => 'highlight-post',
+                'meta_value' => 1
             ));
 
             echo '<ul class="featured-grid">';
