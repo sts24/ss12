@@ -36,9 +36,10 @@
             $query = new WP_Query(array(
                 'post_type' => array('portfolio'),
                 'posts_per_page' => 4,
-                'order' => 'dsc',
+                'order' => 'DESC',
                 'meta_key' => 'hightlight-post',
-                'orderby' => 'meta_value',
+                'meta_value' => 'true',
+                'meta_compare' => '=',
             ));
 
             echo '<ul class="featured-grid">';
