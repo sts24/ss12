@@ -38,8 +38,7 @@
                 'posts_per_page' => 4,
                 'order' => 'DESC',
                 'meta_key' => 'hightlight-post',
-                'meta_value' => 'true',
-                'meta_compare' => '=',
+                'meta_value' => '1'
             ));
 
             echo '<ul class="featured-grid">';
